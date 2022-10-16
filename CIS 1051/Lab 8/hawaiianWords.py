@@ -43,38 +43,43 @@ def check(word):
     return True
 
 
-def pronounce(word):
-    chars = word.lower()
-    print(len(chars))
-    i = 0
-    result = []
+def soundout(part):
+    lower_part = part.lower()
+    result = ''
+    part_len = len(lower_part)
 
-    while i < len(chars):
-        char = chars[i]
-        # print(char)
-        if i < len(chars) - 1:
-            print(char + chars[i + 1])
-            pair = char + chars[i + 1]
-            tr = vowelPairs.get(pair)
-
-            if tr is None:
-                tr = vowels.get(char)
-
+    if part_len < 2:
+        result = vowels.get(lower_part)
+    else:
+        for i, char in enumerate(lower_part):
+            if constants.get(char):
+                if (i-1) < 0:
+                    result += char
+                elif vowels.get(lower_part[i-1]):
+                    result += "-" + char
             else:
-                i = i + 1
+                if i < part_len-1:
+                    pair = char + lower_part[i+1]
+                    if vowelPairs.get(pair):
+                        result += vowelPairs.get(pair)
+                    elif vowels.get(char):
+                        result += vowels.get(char)
+                elif vowels.get(char):
+                    if ((i-1) > -1) and vowels.get(lower_part[i-1]):
+                        pass
+                    else:
+                        result += vowels.get(char)
 
-        else:
-            tr = vowels.get(char)
-        if tr is not None and i < len(chars) - 1:
-            tr = tr + '-'
+    return result
 
-        result.append(tr or char)
-        i = i + 1
 
-        wordResult = ''.join(result)
-
-    print(wordResult)
-    return wordResult
+def pronounce(word):
+    wordResult = []
+    parts = word.split(' ')
+    for part in parts:
+        wordResult.append(soundout(part))
+    print(' '.join(wordResult).capitalize())
+    return(' '.join(wordResult).capitalize())
 
 
 check('E komo mai')
