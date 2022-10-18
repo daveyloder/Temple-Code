@@ -82,19 +82,19 @@ def pronounce(word):
     return(' '.join(wordResult).capitalize())
 
 
-check('E komo mai')
-pronounce('E komo mai')
-# userInput = ''
-# while userInput == '':
-#     userInput = str(input('Please enter a hawaiian word to pronouce: '))
+# check('E komo mai')
+# pronounce('E komo mai')
+userInput = ''
+while userInput == '':
+    userInput = str(input('Please enter a hawaiian word to pronouce: '))
 
-#     if check(userInput):
-#         pronounce(userInput)
-#     repeat = str(
-#         input("Would you like to enter another word? \n Y/YES/N/NO: "))
-#     repeat = repeat.upper()
-#     if repeat == 'N' or repeat == 'NO':
-#         print('Thank you! Goodbye!')
-#         break
-#     else:
-#         userInput = ''
+    if check(userInput):
+        pronounce(userInput)
+    repeat = str(
+        input("Would you like to enter another word? \n Y/YES/N/NO: "))
+    repeat = repeat.upper()
+    if repeat == 'N' or repeat == 'NO':
+        print('Thank you! Goodbye!')
+        break
+    else:
+        userInput = ''
