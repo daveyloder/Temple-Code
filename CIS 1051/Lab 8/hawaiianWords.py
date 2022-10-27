@@ -43,43 +43,71 @@ def check(word):
     return True
 
 
-def soundout(part):
-    lower_part = part.lower()
-    result = ''
-    part_len = len(lower_part)
-
-    if part_len < 2:
-        result = vowels.get(lower_part)
-    else:
-        for i, char in enumerate(lower_part):
-            if constants.get(char):
-                if (i-1) < 0:
-                    result += char
-                elif vowels.get(lower_part[i-1]):
-                    result += "-" + char
-            else:
-                if i < part_len-1:
-                    pair = char + lower_part[i+1]
-                    if vowelPairs.get(pair):
-                        result += vowelPairs.get(pair)
-                    elif vowels.get(char):
-                        result += vowels.get(char)
-                elif vowels.get(char):
-                    if ((i-1) > -1) and vowels.get(lower_part[i-1]):
-                        pass
-                    else:
-                        result += vowels.get(char)
-
-    return result
-
-
 def pronounce(word):
-    wordResult = []
-    parts = word.split(' ')
-    for part in parts:
-        wordResult.append(soundout(part))
-    print(' '.join(wordResult).capitalize())
-    return(' '.join(wordResult).capitalize())
+
+    word1 = word.lower()
+
+    index = 0
+    output = []
+
+    while index < len(word1):
+        letters = word1[index]
+
+        if index < len(word1) - 1:
+            doubleV = letters + word1[index + 1]
+            pr = vowelPairs.get(doubleV)
+
+            if pr is None:
+                pr = vowels.get(letters)
+            else:
+                index += 1
+        else:
+            pr = vowels.get(word)
+
+        if pr is not None and index < len(word1) - 1:
+            pr += "-"
+        output.append(pr or letters)
+        index += 1
+    print("".join(output))
+    return ("".join(output))
+
+# def soundout(part):
+#     lower_part = part.lower()
+#     result = ''
+#     part_len = len(lower_part)
+
+#     if part_len < 2:
+#         result = vowels.get(lower_part)
+#     else:
+#         for i, char in enumerate(lower_part):
+#             if constants.get(char):
+#                 if (i-1) < 0:
+#                     result += char
+#                 elif vowels.get(lower_part[i-1]):
+#                     result += "-" + char
+#             else:
+#                 if i < part_len-1:
+#                     pair = char + lower_part[i+1]
+#                     if vowelPairs.get(pair):
+#                         result += vowelPairs.get(pair)
+#                     elif vowels.get(char):
+#                         result += vowels.get(char)
+#                 elif vowels.get(char):
+#                     if ((i-1) > -1) and vowels.get(lower_part[i-1]):
+#                         pass
+#                     else:
+#                         result += vowels.get(char)
+
+#     return result
+
+
+# def pronounce(word):
+#     wordResult = []
+#     parts = word.split(' ')
+#     for part in parts:
+#         wordResult.append(soundout(part))
+#     print(' '.join(wordResult).capitalize())
+#     return(' '.join(wordResult).capitalize())
 
 
 userInput = ''
