@@ -82,8 +82,6 @@ def pronounce(word):
     return(' '.join(wordResult).capitalize())
 
 
-# check('E komo mai')
-# pronounce('E komo mai')
 userInput = ''
 while userInput == '':
     userInput = str(input('Please enter a hawaiian word to pronouce: '))
