@@ -1,27 +1,29 @@
 import random
 
+# Rules of the game
 
-def pigGame():
-    playerOne_score = 0
-    playerTwo_score = 0
+# Two players roll dice
+# First player to reach 100 points wins
 
 
 def diceRoll():
-    rollNumber = random.randint(1, 6)
-    return rollNumber
+    '''Return a random number from 1 to 6 inclusive'''
+    roll_number = random.randint(1, 6)
+    return roll_number
 
 
-def playerOne_move(playerTwo_score, playerOne_score):
-    playerOne_move_score = 0
-    playerOne_roll = diceRoll()
-    print("Player One rolled" + str(playerOne_roll)+".")
-    if playerOne_roll == 1:
-        print("Your current score is " +
-              str(playerOne_score-playerOne_move_score) + ".")
-        return 0
-    else:
-        while playerOne_roll != 1:
-            playerOne_move_score += playerOne_roll
+def pigGame():
+    roll = 0
+    humanScore = 0
+    while roll != 1:
+        roll = diceRoll()
+        humanScore += roll
+        print("Roll: " + str(roll))
+        if humanScore >= 20:
+            print("Turn total: " + str(humanScore))
+            break
+    if roll == 1:
+        print("Turn total: " + str(0))
 
 
-print(diceRoll())
+pigGame()
