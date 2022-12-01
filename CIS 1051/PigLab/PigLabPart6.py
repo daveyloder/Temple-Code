@@ -18,13 +18,12 @@ def pigHoldAt20OrGoal():
             if result == 1:
                 total = 0
                 done = True
-                turnCount += 1
             else:
                 total += result
-                turnCount += 1
         score += total
-    print("Total Score: ", score)
-    print('Total turns: ', turnCount)
+        turnCount += 1
+    # print("Total Score: ", score)
+    # print('Total turns: ', turnCount)
     return turnCount
 
 
