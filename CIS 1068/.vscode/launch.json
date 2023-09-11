@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Greetings",
+            "request": "launch",
+            "mainClass": "Assignment_01.Greetings",
+            "projectName": "CIS 1068_ec49b358"
+        }
+    ]
+}
