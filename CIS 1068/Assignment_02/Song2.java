@@ -37,16 +37,16 @@ public class Song2 {
     public static void goose(String[] args) {
         System.out.print("Bought me a goose and the goose pleased me,\r\n" + //
                 "I fed my goose under yonder tree.\r\n");
-        System.out.print("Goose goes hissy, hissy,\r\n" + verseends);
         verseends = "Goose goes hissy, hissy,\r\n" + verseends;
+        System.out.print(verseends);
         System.out.println();
     }
 
     public static void sheep(String[] args) {
         System.out.print("Bought me a sheep and the sheep pleased me,\r\n" + //
                 "I fed my sheep under yonder tree.\r\n");
-        System.out.print("Sheep goes baa, baa,\r\n" + verseends);
         verseends = "Sheep goes baa, baa,\r\n" + verseends;
+        System.out.print(verseends);
         System.out.println();
     }
 

@@ -1,15 +1,71 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Greetings",
-            "request": "launch",
-            "mainClass": "Assignment_01.Greetings",
-            "projectName": "CIS 1068_ec49b358"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MoreWeirdStringStuff",
+      "request": "launch",
+      "mainClass": "September_14_2023.MoreWeirdStringStuff",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "CharStuff",
+      "request": "launch",
+      "mainClass": "September_14_2023.CharStuff",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "WeirdStringStuff",
+      "request": "launch",
+      "mainClass": "September_14_2023.WeirdStringStuff",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Grading_Calculator",
+      "request": "launch",
+      "mainClass": "Assignment_03.Grading_Calculator",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "ScannerTst",
+      "request": "launch",
+      "mainClass": "September_12_2023.ScannerTst",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Scanner",
+      "request": "launch",
+      "mainClass": "September_12_2023.Scanner",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "restaurant_receipt",
+      "request": "launch",
+      "mainClass": "Assignment_02.restaurant_receipt",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Song2",
+      "request": "launch",
+      "mainClass": "Assignment_02.Song2",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Greetings",
+      "request": "launch",
+      "mainClass": "Assignment_01.Greetings",
+      "projectName": "CIS 1068_ec49b358"
+    }
+  ]
 }
