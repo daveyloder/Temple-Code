@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TrickyProblem",
+      "request": "launch",
+      "mainClass": "September_19_2023.TrickyProblem",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "MoreWeirdStringStuff",
+      "request": "launch",
+      "mainClass": "September_19_2023.MoreWeirdStringStuff",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "MoreWeirdStringStuff",
       "request": "launch",
       "mainClass": "September_14_2023.MoreWeirdStringStuff",

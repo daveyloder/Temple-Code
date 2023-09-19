@@ -1,32 +1,61 @@
-package September_18_2023;
+package September_19_2023;
 
 import java.util.*;
 
 public class MoreWeirdStringStuff {
-    public static boolean sameBROKEN(String s1, String s2) {
-        return s1 == s2;
-    };
+    /*
+     * public static boolean sameBROKEN(String s1, String s2) {
+     * return s1 == s2;
+     * };
+     */
 
     public static boolean same(String s1, String s2) {
         /*
-         * check the lengths. if the length are different, the strings must be different
+         * check the lengths. if the lengths
+         * are different, the strings must be different
          */
         if (s1.length() != s2.length()) {
             return false;
         }
 
+        /*
+         * compare the two strings letter by letter
+         * if we find a pair that are not the same
+         * return false
+         */
         for (int i = 0; i < s1.length(); i++) {
             if (s1.charAt(i) != s2.charAt(i)) {
                 return false;
             }
         }
-        // IS BROKEN AND WILL FINISH ON Septermber 18th 2023
-        return true;
 
-    };
+        return true;
+    }
+
+    public static boolean sameIgnoringCase(String s1, String s2) {
+        s1 = s1.toLowerCase();
+        s2 = s2.toLowerCase();
+        return same(s1, s2);
+        // if (s1.length() != s2.length()) {
+        // return false;
+        // }
+
+        /*
+         * compare the two strings letter by letter
+         * if we find a pair that are not the same
+         * return false
+         */
+        // for (int i = 0; i < s1.length(); i++) {
+        // if (s1.charAt(i) != s2.charAt(i)) {
+        // return false;
+        // }
+        // }
+
+        // return true;
+    }
 
     public static void main(String[] args) {
-        boolean DEBUG = true;
+        boolean DEBUG = false;
         String name;
         Scanner inFromKBD = new Scanner(System.in);
         System.out.println("What's your name? ");
@@ -41,7 +70,9 @@ public class MoreWeirdStringStuff {
         // } else {
         // System.out.println("Hi " + name + ", pleased to meet you!");
         // }
-        if (name.equals("spongebob")) {
+
+        // Or if (name.equalsIgnoreCase("spongebob") {
+        if (sameIgnoringCase("spongebob", name)) {
             System.out.println("Where's Partrick?");
         } else {
             System.out.println("Hi " + name + ", pleased to meet you!");
