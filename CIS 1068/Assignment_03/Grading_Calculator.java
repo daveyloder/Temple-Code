@@ -1,6 +1,5 @@
 package Assignment_03;
 
-// Delete the above package.
 import java.util.*;
 
 public class Grading_Calculator {
@@ -84,20 +83,57 @@ public class Grading_Calculator {
         return weightedscore;
     }
 
-    public static void main(String[] args) {
+    public static double[] weight() {
+        double[] allweights = { 0, 0, 0 };
+        double weightTotal = 100;
         // Create scanner for weight input
         Scanner weightInput = new Scanner(System.in);
         // Ask for exam 1, exam 2, and homework weight percents in whole int
         System.out.print("What is Homework weight? :");
         double homeworkweight = weightInput.nextInt();
+        if (homeworkweight >= weightTotal) {
+            System.out.println("Needs to be value less than 100, please try again");
+            System.out.print("What is Homework weight? :");
+            homeworkweight = weightInput.nextInt();
+        } else if (homeworkweight <= 0) {
+            System.out.println("Needs to be value greater than 0, please try again");
+            System.out.print("What is Homework weight? :");
+            homeworkweight = weightInput.nextInt();
+        } else {
+            weightTotal -= homeworkweight;
+        }
+
         System.out.print("What is Exam 1 weight? :");
         double exam1weight = weightInput.nextInt();
-        System.out.print("What is Exam 2 weight? :");
-        double exam2weight = weightInput.nextInt();
-        // Save outputs of functions to variables while also calling functions
-        double weightedhomeworkgrade = homeworkgradewithweight(homeworkweight);
-        double weightedexam1grade = weightedexamgrade("1", exam1weight);
-        double weightedexam2grade = weightedexamgrade("2", exam2weight);
+
+        if (exam1weight >= weightTotal) {
+            System.out.println("Needs to be value less than " + weightTotal + ", please try again");
+            System.out.print("What is Homework weight? :");
+            homeworkweight = weightInput.nextInt();
+        } else if (exam1weight <= 0) {
+            System.out.println("Needs to be value greater than 0, please try again");
+            System.out.print("What is Homework weight? :");
+            homeworkweight = weightInput.nextInt();
+        } else {
+            weightTotal -= exam1weight;
+        }
+
+        double exam2weight = weightTotal;
+        System.out.println("Exam 2 weight is: " + exam2weight + "%");
+        allweights[0] = homeworkweight;
+        allweights[1] = exam1weight;
+        allweights[2] = exam2weight;
+        return allweights;
+    }
+
+    public static void main(String[] args) {
+        // Returned values of weight function to new array.
+        double[] weights = weight();
+        // Save outputs of functions to variables and reference numbers to array
+        // positions
+        double weightedhomeworkgrade = homeworkgradewithweight(weights[0]);
+        double weightedexam1grade = weightedexamgrade("1", weights[1]);
+        double weightedexam2grade = weightedexamgrade("2", weights[2]);
         // Add weighted grades together and output results in double.
         double grade = weightedhomeworkgrade + weightedexam1grade + weightedexam2grade;
         System.out.print("Course grade: " + (Math.round(grade * 100.0) / 100.0));

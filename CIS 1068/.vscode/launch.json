@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GuessingGame",
+      "request": "launch",
+      "mainClass": "September_21_2023.GuessingGame",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "RandStuff",
+      "request": "launch",
+      "mainClass": "September_21_2023.RandStuff",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "StringMystery",
+      "request": "launch",
+      "mainClass": "September_21_2023.StringMystery",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "CreditHourCalculator",
+      "request": "launch",
+      "mainClass": "Random_Stuff.CreditHourCalculator",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "TrickyProblem",
       "request": "launch",
       "mainClass": "September_19_2023.TrickyProblem",
