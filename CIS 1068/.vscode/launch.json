@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Game",
+      "request": "launch",
+      "mainClass": "Assignment_04.Game",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "TheGame",
+      "request": "launch",
+      "mainClass": "Assignment_04.TheGame",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "GuessingGame",
       "request": "launch",
       "mainClass": "September_21_2023.GuessingGame",
