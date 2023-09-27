@@ -121,15 +121,27 @@ public class Game {
             for (int i : moveDictionary.keySet()) {
                 System.out.println(i + ".)" + moveDictionary.get(i));
             }
-            // takes user input
+            // takes user input by first checking if it is even a number.
 
-            // If user types a string, the game crashes. Need to fix
-            moveChoice = userInput.nextInt();
+            do {
+                try {
+                    moveChoice = userInput.nextInt();
+                } catch (InputMismatchException e) {
+                    System.out.println(
+                            "The gods did not understand your answer, please try with the correct choice.\r\n (Please choose a number between 1 and 5 on the keyboard and no characters.)");
+                    moveChoice = 0;
+                }
+                userInput.nextLine();
+            } while (moveChoice == 0);
             // Checks if choice is equal to 0 or greater than 5, it will prompt the user to
             // try again.
             while (((moveChoice <= 0) || (moveChoice > 5))) {
-                System.out.println("Please choose a number between 1 and 5 on the keyboard.");
+                System.out
+                        .println("The gods did not understand your answer, please try with the correct choice.\r\n" + //
+                                "(Please choose a number between 1 and 5 on the keyboard.)");
+
                 moveChoice = userInput.nextInt();
+
             }
             // A for loop for if the user choice matches a key index of the dictionary, to
             // save the move in move variable.
