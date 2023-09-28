@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FileTest",
+      "request": "launch",
+      "mainClass": "September_28_2023.FileTest",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "Game",
       "request": "launch",
       "mainClass": "Assignment_04.Game",
