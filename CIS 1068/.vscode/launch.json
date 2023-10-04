@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StringPractice",
+      "request": "launch",
+      "mainClass": "Assignment_05.StringPractice",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "FileTest",
       "request": "launch",
       "mainClass": "September_28_2023.FileTest",

@@ -205,8 +205,6 @@ public class Game {
         return winner;
     }
 
-    // JUnit test function to test all outcomes of checkWinner function
-
     public static void main(String[] args) {
         // Game variables
         int roundsPlayed = 0;
