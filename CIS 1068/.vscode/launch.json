@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ReturnArrays",
+      "request": "launch",
+      "mainClass": "October_12_2023.ReturnArrays",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "Webify_v4",
       "request": "launch",
       "mainClass": "Assignment_06.Webify_v4",
