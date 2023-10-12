@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Webify_v4",
+      "request": "launch",
+      "mainClass": "Assignment_06.Webify_v4",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Arrays",
+      "request": "launch",
+      "mainClass": "October_10_2023.Arrays",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Webify_v3",
+      "request": "launch",
+      "mainClass": "Assignment_06.Webify_v3",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Webify_v2",
+      "request": "launch",
+      "mainClass": "Assignment_06.Webify_v2",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Webify",
+      "request": "launch",
+      "mainClass": "Assignment_06.Webify",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "StringPractice",
       "request": "launch",
       "mainClass": "Assignment_05.StringPractice",
