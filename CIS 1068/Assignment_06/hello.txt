@@ -13,3 +13,6 @@ is he, Spongebob Squarepants
 
 - list item
 - list item
+
+## This needs to be bold
+^^ This needs to be italic

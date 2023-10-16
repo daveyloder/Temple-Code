@@ -3,8 +3,45 @@ package Assignment_06;
 import java.io.*;
 import java.util.*;
 
+/* Welcome to the Webify_v4. 
+ * A program designed to convert txt files to html code. 
+ * In order to use this program correctly, the following must be understood.
+ * When the program runs, you must enter the txt file name including the extention ".txt"
+ * Here is a table on how to convert txt to html based on what your looking to do.
+ * Support is only for the following and will not result in other tags being displayed.
+ * For <h1> tags, use "_" before and after the content on the line. - (example) -> "_This is an example of a header_".
+ * 
+ *  -WARNING- 
+ * the following tags need to have a space, 
+ * if any issues please just copy and paste the character for your text file.
+ * The space is included in the examples below.
+ * 
+ * For <ul> and <li> tags, use "- " before the the line - (example) -> "- this is part of a list"
+ * For <b> tags, use "## " before the line. - (example) -> "## This should be bold."
+ * For <i> tags, use "^^ " before the line. - (example) -> "^^ This should be italic."
+ * 
+ * For <a> tags, please do the following;
+ * [[https://example.com][ThisIsTheDescription]]
+ * The first nested bracket is the web address. The second is the description of the link.
+ * Please make sure to follow this example.
+ */
+
 public class Webify_v4 {
     public static Scanner CONSOLE = new Scanner(System.in);
+
+    public static void programIntro() {
+        System.out.print(" #     #                                             #       \r\n" + //
+                " #  #  # ###### #####  # ###### #   #         #    # #    #  \r\n" + //
+                " #  #  # #      #    # # #       # #          #    # #    #  \r\n" + //
+                " #  #  # #####  #####  # #####    #           #    # #    #  \r\n" + //
+                " #  #  # #      #    # # #        #           #    # ####### \r\n" + //
+                " #  #  # #      #    # # #        #            #  #       #  \r\n" + //
+                "  ## ##  ###### #####  # #        #             ##        #  \r\n" + //
+                "                                      #######                \r\n" + //
+                "Now with the power of two hamsters vs our previous 1.5 hamster technology!\r\n");
+        System.out.print("");
+
+    }
 
     public static String userTextInput() {
         System.out.println("Please type in the text file name, please make sure it is correct case");
@@ -70,7 +107,8 @@ public class Webify_v4 {
         writer.write("<body>");
         while ((line = br.readLine()) != null) {
             if ((line.startsWith("_")) && (line.endsWith("_"))) {
-                line = "<h1>" + line.substring(2, line.length() - 1) + "</h1>";
+                line = "<h1>" + line.substring(1, line.length() - 1) + "</h1>";
+                writer.write(line);
             } else if (line.startsWith("-")) {
                 if (!inList) {
                     writer.write("<ul>");
@@ -89,11 +127,19 @@ public class Webify_v4 {
             } else if ((line.startsWith("[[")) && line.endsWith("]]")) {
                 String url = line.substring(2, line.indexOf("]"));
                 String description = line.substring(line.indexOf("]") + 2, line.length() - 2);
-                String hyperlink = "<a href=\"" + url + "\"><p>" + description + "</p></a>";
+                String hyperlink = "<a href=\"" + url + "\">" + description + "</a>";
                 line = hyperlink;
                 writer.write(line);
             } else if ("".equals(line)) {
                 line = "<P>";
+                writer.write(line);
+                // This line of code checks to see if leading tag has two hastags. IF so, wraps
+                // in bold html tag.
+            } else if (line.startsWith("##")) {
+                line = "<b>" + line.substring(3) + "</b>";
+                writer.write(line);
+            } else if (line.startsWith("^^")) {
+                line = "<i>" + line.substring(3) + "</i>";
                 writer.write(line);
             }
         }
@@ -109,6 +155,7 @@ public class Webify_v4 {
     }
 
     public static void main(String[] args) throws Exception {
+        programIntro();
         String txtFile = userTextInput();
         convertTxtToHTML(txtFile);
     }
