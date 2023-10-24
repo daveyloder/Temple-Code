@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PointMain",
+      "request": "launch",
+      "mainClass": "October_24_2023.PointMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "ReturnArrays",
       "request": "launch",
       "mainClass": "October_12_2023.ReturnArrays",
