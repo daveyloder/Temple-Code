@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StaffMain",
+      "request": "launch",
+      "mainClass": "November_2_2023.StaffMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "FractionMain",
+      "request": "launch",
+      "mainClass": "Assignment_08.FractionMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "CarMain",
+      "request": "launch",
+      "mainClass": "Assignment_08.CarMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "PointMain",
       "request": "launch",
       "mainClass": "October_24_2023.PointMain",
