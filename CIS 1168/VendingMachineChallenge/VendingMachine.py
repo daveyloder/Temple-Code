@@ -1,4 +1,6 @@
 # Vending Machine Variables
+
+
 choice = {1: ["Coca-cola", 2.50],
           2: ["Dasani Water", 1.00],
           3: ["Tropical Orange Juice", 2.25],
