@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "FlashCardMain",
+      "request": "launch",
+      "mainClass": "November_7_2023.FlashCardMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "StaffMain",
       "request": "launch",
       "mainClass": "November_2_2023.StaffMain",
