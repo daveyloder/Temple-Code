@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HoneyToDoList",
+      "request": "launch",
+      "mainClass": "HoneyToDoList",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "Task",
+      "request": "launch",
+      "mainClass": "Task",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "FlashCardMain",
       "request": "launch",
       "mainClass": "November_7_2023.FlashCardMain",
