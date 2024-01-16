@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Driver",
+      "request": "launch",
+      "mainClass": "Assignment_10.Driver",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "HoneyToDoListMain",
+      "request": "launch",
+      "mainClass": "Assignment_9.HoneyToDoListMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
+      "name": "HoneyToDoListMain",
+      "request": "launch",
+      "mainClass": "HoneyToDoListMain",
+      "projectName": "CIS 1068_ec49b358"
+    },
+    {
+      "type": "java",
       "name": "HoneyToDoList",
       "request": "launch",
       "mainClass": "HoneyToDoList",
