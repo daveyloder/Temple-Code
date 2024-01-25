@@ -1,4 +1,4 @@
-package Jan_24_2024.ArrayList_Example_2;
+package HW_1.Exercise2_2;
 
 import java.util.*;
 
@@ -23,6 +23,8 @@ public class Lottery {
                 numbers[r] = n - 1;
                 n--;
             }
+            // sorts the array from lowest to highest
+            Arrays.sort(result);
 
             // Print dorted array
             System.out.println("Draw the following integers " +
