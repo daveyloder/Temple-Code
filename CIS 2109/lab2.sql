@@ -158,5 +158,111 @@ SELECT
     TO_CHAR(START_DATE, 'yyyy') AS FROM_YEAR,
     TO_CHAR(END_DATE, 'yyyy')   AS TO_YEAR
 FROM
-    HR_JOB_HISTORY
+    HR_JOB_HISTORY;
+
 -- Question 7 --
+SELECT
+    EMPLOYEE_ID,
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    MANAGER_ID IS NULL
+    AND COMMISSION_PCT IS NULL;
+
+-- Question 8 --
+SELECT
+    EMPLOYEE_ID,
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    MANAGER_ID IS NULL
+    OR COMMISSION_PCT IS NULL;
+
+-- Question 9a --
+SELECT
+    EMPLOYEE_ID,
+    FIRST_NAME,
+    LAST_NAME,
+    JOB_ID,
+    SALARY
+FROM
+    HR_EMPLOYEES
+WHERE
+    JOB_ID LIKE 'IT_PROG'
+    AND SALARY >=8000
+    OR JOB_ID LIKE 'FI_ACCOUNT';
+
+-- Question 9b --
+SELECT
+    EMPLOYEE_ID,
+    FIRST_NAME,
+    LAST_NAME,
+    JOB_ID,
+    SALARY
+FROM
+    HR_EMPLOYEES
+WHERE
+    JOB_ID LIKE 'IT_PROG'
+    AND SALARY >=8000
+    OR JOB_ID LIKE'FI_ACCOUNT'
+    AND SALARY >= 8000;
+
+-- Question 10a --
+SELECT
+    MANAGER_ID,
+    JOB_ID,
+    SALARY
+FROM
+    HR_EMPLOYEES
+ORDER BY
+    MANAGER_ID,
+    SALARY;
+
+-- Question 10b --
+SELECT
+    MANAGER_ID,
+    JOB_ID,
+    SALARY
+FROM
+    HR_EMPLOYEES
+ORDER BY
+    MANAGER_ID,
+    SALARY DESC;
+
+-- Question 10c --
+SELECT
+    MANAGER_ID,
+    JOB_ID,
+    SALARY
+FROM
+    HR_EMPLOYEES
+ORDER BY
+    MANAGER_ID DESC,
+    SALARY DESC;
+
+-- Question 11a --
+SELECT
+    COUNT(LOCATION_ID)
+FROM
+    HR_LOCATIONS;
+
+-- Question 11b --
+SELECT
+    *
+FROM
+    HR_LOCATIONS
+WHERE LOCATION_ID IN(S)
+
+-- Question 12 --
+
+
+-- Question 13 --
+-- Question 14a --
+-- Question 14b --
+-- Question 14c --
+-- Question 14d --
+-- Question 14e --
