@@ -123,3 +123,5 @@ WHERE
     );
 
 --- Correlated vs Noncorrelated Subqueries
+--- Noncorrelated subqueries do not depend on dada from the outer query and execute once for the entire outer query
+--- Correlated can use EXIST
