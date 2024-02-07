@@ -19,7 +19,7 @@ public class IntCollection {
         int i = 0;
         int j = a.length - 1;
         while (i <= j) {
-            int mid = Math.floorDiv((i + j), 2);
+            int mid = (i + j) / 2;
             if (key > a[mid]) {
                 i = mid + 1;
             } else if (key < a[mid]) {

@@ -6,7 +6,7 @@ public class ListFilter {
       // read the valid list into an int array (the next line reads valid1M.txt
       // containing 1 million entries)
       In in = new In(
-            "CIS 2168\\Jan_26_2024\\ClassExercise\\valid1m.txt");
+            "HW_2\\Exercise3_3\\valid1m.txt");
 
       // alternatively, read in a small file called valid.txt
       // In in = new In(
@@ -22,7 +22,7 @@ public class ListFilter {
       // read the data that needs to be filtered (the next line reads contenders1M.txt
       // containing 1.5 million entries)
       in = new In(
-            "CIS 2168\\Jan_26_2024\\ClassExercise\\contenders1m.txt");
+            "HW_2\\Exercise3_3\\contenders1m.txt");
 
       // alternatively, read in a small file called contenders.txt
       // in = new In(

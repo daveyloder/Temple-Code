@@ -36,29 +36,46 @@ public class ResizingArrayList<E> implements Iterable<E> {
       if (n == elements.length)
          resize(2 * elements.length);
       elements[n++] = element;
-   } // TODO: IMPLEMENT IN CLASS
+   }
 
    // Adds the element at index.
    public void add(int index, E element) {
-   } // TODO: IMPLEMENT IN CLASS
+      if (n == elements.length)
+         resize(2 * elements.length);
+      for (int i = index + 1; i < elements.length; i++) {
+         elements[i] = elements[i - 1];
+      }
+      elements[index] = element;
+   }
 
    // Replaces the element at index with the given element
    public void set(int index, E element) {
-   } // TODO: IMPLEMENT IN CLASS
+      elements[index] = element;
+   }
 
    // Returns the item at index without removing it
    public E get(int index) {
       return elements[index];
-   } // TODO: IMPLEMENT IN CLASS
+   }
 
    // Removes the element at position index
    public void remove(int index) {
-   } // TODO: IMPLEMENT IN CLASS
+      if (index < 0 || index > n)
+         throw new ArrayIndexOutOfBoundsException();
+      for (int i = index + 1; i < n; i++) {
+         elements[i - 1] = elements[i];
+      }
+   }
 
    // Returns the index of the first occurrence of element or -1 if not found
    public int indexOf(E element) {
+      for (int i = 0; i < n; i++) {
+         if (elements[i].equals(element))
+            return i;
+      }
+
       return -1;
-   } // TODO: IMPLEMENT IN CLASS
+   }
 
    @Override
    // Returns an iterator that iterates over the items in this list
