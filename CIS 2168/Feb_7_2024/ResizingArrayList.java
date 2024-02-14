@@ -41,7 +41,7 @@ public class ResizingArrayList<E> implements Iterable<E> {
 
    // Adds the element at index.
    public void add(int index, E element) {
-      if (index < 0 || index > elements.length)
+      if (index < 0 || index > n)
          throw new ArrayIndexOutOfBoundsException();
       if (n == elements.length)
          resize(2 * elements.length);
@@ -49,6 +49,7 @@ public class ResizingArrayList<E> implements Iterable<E> {
          elements[i] = elements[i - 1];
       }
       elements[index] = element;
+      n++;
    }
 
    // Replaces the element at index with the given element

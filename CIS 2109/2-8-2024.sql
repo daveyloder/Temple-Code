@@ -1,0 +1,110 @@
+--a--
+SELECT
+    ARTIST_NAME
+FROM
+    ARTIST A
+    INNER JOIN ITEMS
+    ON A.ARTIST_ID = I.ARTIST_ID
+WHERE
+    ARTIST_NAME < 'Cat';
+
+-- b --
+SELECT
+    ITEM_NAME
+FROM
+    ITEMS  I
+WHERE
+    ARTIST_ID IN(
+        SELECT
+            ARTIST_ID
+        FROM
+            ARTIST
+        WHERE
+            ARTIST_NAME <'Cat'
+    );
+
+-- c --
+SELECT
+    ITEM_NAME
+FROM
+    ITEMS  I
+WHERE
+    ARTIST_ID IN(
+        SELECT
+            ARTIST_ID
+        FROM
+            ARTIST A
+        WHERE
+            A.ARTIST_ID = I.ARTIST_ID
+            AND ARTIST_NAME < 'Cat'
+    );
+
+-- d --
+SELECT
+    ITEM_NAME
+FROM
+    ITEMS  I
+WHERE
+    EXISTS(
+        SELECT
+            1
+        FROM
+            ARTIST A
+        WHERE
+            A.ARTIST_ID = I.ARTIST_ID
+            AND ARTIST_NAME < 'Cat'
+    );
+
+-- practice --
+-- Set Operations --
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    OT_EMPLOYEES     E
+    INNER JOIN OT_CERTIFICATION C
+    ON E.EMPLOYEE_ID = C.EMPLOYEE_ID
+WHERE
+    C.CETIFICATE_ID = 1
+    OR C.CERTIFICATE_ID = 2;
+
+-- Minus Union --
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    OT_EMPLOYEES     E
+    INNER JOIN OT_CERTIFICATION C
+    ON E.EMPLOYEE_ID = C.EMPLOYEE_ID
+WHERE
+    C.CETIFICATE_ID = 1 MINUS
+    SELECT
+        FIRST_NAME,
+        LAST_NAME
+    FROM
+        OT_EMPLOYEES     E
+        INNER JOIN OT_CERTIFICATION C
+        ON E.EMPLOYEE_ID = C.EMPLOYEE_ID
+    WHERE
+        C.CERTIFICATE_ID = 2;
+
+-- Union --SELECT
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    OT_EMPLOYEES     E
+    INNER JOIN OT_CERTIFICATION C
+    ON E.EMPLOYEE_ID = C.EMPLOYEE_ID
+WHERE
+    C.CETIFICATE_ID = 1
+UNION
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    OT_EMPLOYEES     E
+    INNER JOIN OT_CERTIFICATION C
+    ON E.EMPLOYEE_ID = C.EMPLOYEE_ID
+WHERE
+    C.CERTIFICATE_ID = 2;
