@@ -1,4 +1,4 @@
---- Question 1 ---
+--- Question 1 (Already ran)---
 UPDATE HR_DEPARTMENTS
 SET
     MANAGER_ID = 205
@@ -63,9 +63,64 @@ WHERE
             EMPLOYEE_ID = MANAGER_ID
     );
 
---- Question 1e ---
+--- Question 1ea ---
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME
+FROM
+    HR_EMPLOYEES   E
+    INNER JOIN HR_DEPARTMENTS D
+    ON E.EMPLOYEE_ID <> D.MANAGER_ID;
 
---- Question 2 ---
+--- Question 1eb ---
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME
+FROM
+    HR_EMPLOYEES   E
+WHERE
+    E.EMPLOYEE_ID NOT IN(
+        SELECT
+            MANAGER_ID
+        FROM
+            HR_DEPARTMENTS
+        WHERE
+            MANAGER_ID IS NOT NULL
+    );
+
+--- Question 1ec ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES   E
+WHERE
+    E.EMPLOYEE_ID NOT IN(
+        SELECT
+            MANAGER_ID
+        FROM
+            HR_DEPARTMENTS D
+        WHERE
+            D.MANAGER_ID <> E.EMPLOYEE_ID
+    );
+
+--- Question 1ed ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    EXISTS(
+        SELECT
+            MANAGER_ID
+        FROM
+            HR_DEPARTMENTS
+        WHERE
+            EMPLOYEE_ID <> MANAGER_ID
+    );
+
+--- Question 2 (Already ran)---
 INSERT INTO HR_JOB_HISTORY VALUES (
     200,
     TO_DATE('01-JUL-07', 'DD-MON-YY'),
@@ -93,3 +148,382 @@ INSERT INTO HR_JOB_HISTORY VALUES (
 COMMIT;
 
 --- Question 2a ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    EXISTS(
+        SELECT
+            EMPLOYEE_ID
+        FROM
+            HR_JOB_HISTORY
+        WHERE
+            JOB_ID LIKE 'AC_ACCOUNT'
+            OR JOB_ID LIKE 'AC_MGR'
+    );
+
+--- Question 2b ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    EXISTS(
+        SELECT
+            EMPLOYEE_ID
+        FROM
+            HR_JOB_HISTORY
+        WHERE
+            JOB_ID LIKE 'AC_ACCOUNT'
+            AND JOB_ID LIKE 'AC_MGR'
+    );
+
+--- Question 2c ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    EXISTS(
+        SELECT
+            EMPLOYEE_ID
+        FROM
+            HR_JOB_HISTORY
+        WHERE
+            JOB_ID LIKE 'AC_ACCOUNT'
+    );
+
+--- Question 2d ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES
+WHERE
+    EXISTS(
+        SELECT
+            EMPLOYEE_ID
+        FROM
+            HR_JOB_HISTORY
+        WHERE
+            JOB_ID LIKE 'AC_MGR'
+    );
+
+--- Question 3a ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME,
+    SALARY
+FROM
+    HR_EMPLOYEES
+WHERE
+    SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    );
+
+--- Question 3b ---
+SELECT
+    DE.DEPARTMENT_NAME,
+    COUNT(DE.DEPARTMENT_NAME) AS EMPLOYEE_COUNT_ABOVE_AVG_SALARY
+FROM
+    HR_DEPARTMENTS DE,
+    HR_EMPLOYEES   E
+WHERE
+    E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    AND E.SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    )
+GROUP BY
+    DE.DEPARTMENT_NAME
+ORDER BY
+    EMPLOYEE_COUNT_ABOVE_AVG_SALARY DESC;
+
+--- Question 4a ---
+SELECT
+    DE.DEPARTMENT_NAME,
+    LOC.CITY,
+    COUNT(DE.DEPARTMENT_NAME) AS EMPLOYEE_COUNT_ABOVE_AVG_SALARY
+FROM
+    HR_DEPARTMENTS DE,
+    HR_EMPLOYEES   E,
+    HR_LOCATIONS   LOC
+WHERE
+    E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    AND LOC.LOCATION_ID = DE.LOCATION_ID
+    AND E.SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    )
+GROUP BY
+    DE.DEPARTMENT_NAME,
+    LOC.CITY
+ORDER BY
+    EMPLOYEE_COUNT_ABOVE_AVG_SALARY DESC;
+
+--- Question 4b ---
+
+SELECT
+    DE.DEPARTMENT_NAME,
+    LOC.CITY,
+    COUNT(DE.DEPARTMENT_NAME) AS EMPLOYEE_COUNT_ABOVE_AVG_SALARY
+FROM
+    HR_DEPARTMENTS DE,
+    HR_EMPLOYEES   E,
+    HR_LOCATIONS   LOC
+WHERE
+    E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    AND LOC.LOCATION_ID = DE.LOCATION_ID
+    AND E.SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    )
+GROUP BY
+    DE.DEPARTMENT_NAME,
+    LOC.CITY
+ORDER BY
+    EMPLOYEE_COUNT_ABOVE_AVG_SALARY DESC FETCH FIRST 3 ROWS ONLY;
+
+--- Question 4c ---
+
+SELECT
+    DE.DEPARTMENT_NAME,
+    LOC.CITY,
+    COUNT(DE.DEPARTMENT_NAME) AS EMPLOYEE_COUNT_ABOVE_AVG_SALARY,
+    CASE
+        WHEN AVG(E.SALARY) > 9000 THEN
+            'Best Place to work'
+        WHEN AVG(E.SALARY) > 7500 THEN
+            'Good Place to work'
+        WHEN AVG(E.SALARY) >= 5000 THEN
+            'Fair Place to work'
+        ELSE
+            'Avoid at all cost'
+    END                       AS WORKPLACE_RATING
+FROM
+    HR_DEPARTMENTS DE,
+    HR_EMPLOYEES   E,
+    HR_LOCATIONS   LOC
+WHERE
+    E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    AND LOC.LOCATION_ID = DE.LOCATION_ID
+    AND E.SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    )
+GROUP BY
+    DE.DEPARTMENT_NAME,
+    LOC.CITY
+ORDER BY
+    EMPLOYEE_COUNT_ABOVE_AVG_SALARY DESC;
+
+--- Question 4d ---
+SELECT
+ --- Takes two arguments and return's the first argument that is not null ---
+    COALESCE(DE.DEPARTMENT_NAME, 'No Information Availible') AS DEPARTMENT_NAME,
+    LOC.CITY,
+    COUNT(DE.DEPARTMENT_NAME)                                AS EMPLOYEE_COUNT_ABOVE_AVG_SALARY,
+    CASE
+        WHEN AVG(E.SALARY) > 9000 THEN
+            'Best Place to work'
+        WHEN AVG(E.SALARY) > 7500 THEN
+            'Good Place to work'
+        WHEN AVG(E.SALARY) >= 5000 THEN
+            'Fair Place to work'
+        ELSE
+            'Avoid at all cost'
+    END                                                      AS WORKPLACE_RATING
+FROM
+    HR_LOCATIONS   LOC
+    LEFT JOIN HR_DEPARTMENTS DE
+    ON LOC.LOCATION_ID = DE.LOCATION_ID
+    LEFT JOIN HR_EMPLOYEES E
+    ON E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+WHERE
+    E.SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    )
+    OR E.SALARY IS NULL
+GROUP BY
+    DE.DEPARTMENT_NAME,
+    LOC.CITY
+ORDER BY
+    EMPLOYEE_COUNT_ABOVE_AVG_SALARY DESC;
+
+--- Question 4e ---
+SELECT
+ --- Takes two arguments and return's the first argument that is not null ---
+    COALESCE(DE.DEPARTMENT_NAME, 'No Information Availible') AS DEPARTMENT_NAME,
+    COALESCE(LOC.CITY, 'Missing Information')                AS CITY,
+    COUNT(DE.DEPARTMENT_NAME)                                AS EMPLOYEE_COUNT_ABOVE_AVG_SALARY,
+    CASE
+        WHEN AVG(E.SALARY) > 9000 THEN
+            'Best Place to work'
+        WHEN AVG(E.SALARY) > 7500 THEN
+            'Good Place to work'
+        WHEN AVG(E.SALARY) >= 5000 THEN
+            'Fair Place to work'
+        ELSE
+            'Avoid at all cost'
+    END                                                      AS WORKPLACE_RATING
+FROM
+    HR_LOCATIONS   LOC
+    LEFT JOIN HR_DEPARTMENTS DE
+    ON LOC.LOCATION_ID = DE.LOCATION_ID
+    LEFT JOIN HR_EMPLOYEES E
+    ON E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+WHERE
+    E.SALARY >(
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    )
+    OR E.SALARY IS NULL
+GROUP BY
+    DE.DEPARTMENT_NAME,
+    LOC.CITY
+HAVING
+    AVG(E.SALARY) > COALESCE((
+        SELECT
+            AVG(SALARY)
+        FROM
+            HR_EMPLOYEES
+    ), 0)
+    OR AVG(E.SALARY) IS NULL
+ORDER BY
+    EMPLOYEE_COUNT_ABOVE_AVG_SALARY DESC;
+
+--- Question 5 (already ran) ---
+DROP TABLE HR_INCENTIVES;
+
+CREATE TABLE HR_INCENTIVES (
+    EMPLOYEE_ID INTEGER,
+    INCENTIVE_DATE DATE,
+    INCENTIVE_AMOUNT NUMBER(18, 2)
+);
+
+INSERT INTO HR_INCENTIVES (
+    EMPLOYEE_ID,
+    INCENTIVE_DATE,
+    INCENTIVE_AMOUNT
+) VALUES (
+    101,
+    TO_DATE('01-02-2019', 'dd-mm-yyyy'),
+    5000.00
+);
+
+INSERT INTO HR_INCENTIVES (
+    EMPLOYEE_ID,
+    INCENTIVE_DATE,
+    INCENTIVE_AMOUNT
+) VALUES (
+    200,
+    TO_DATE('06-02-2019', 'dd-mm-yyyy'),
+    3000.00
+);
+
+INSERT INTO HR_INCENTIVES (
+    EMPLOYEE_ID,
+    INCENTIVE_DATE,
+    INCENTIVE_AMOUNT
+) VALUES (
+    162,
+    TO_DATE('07-02-2019', 'dd-mm-yyyy'),
+    4000.00
+);
+
+INSERT INTO HR_INCENTIVES (
+    EMPLOYEE_ID,
+    INCENTIVE_DATE,
+    INCENTIVE_AMOUNT
+) VALUES (
+    155,
+    TO_DATE('01-01-2019', 'dd-mm-yyyy'),
+    4500.00
+);
+
+INSERT INTO HR_INCENTIVES (
+    EMPLOYEE_ID,
+    INCENTIVE_DATE,
+    INCENTIVE_AMOUNT
+) VALUES (
+    178,
+    TO_DATE('04-01-2019', 'dd-mm-yyyy'),
+    3500.00
+);
+
+COMMIT;
+
+--- Question 5.1---
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME,
+    DE.DEPARTMENT_NAME
+FROM
+    HR_EMPLOYEES   E,
+    HR_INCENTIVES  IC,
+    HR_DEPARTMENTS DE
+WHERE
+    E.EMPLOYEE_ID = IC.EMPLOYEE_ID
+    AND E.DEPARTMENT_ID = DE.DEPARTMENT_ID;
+
+--- Question 5.2 ---
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME,
+    DE.DEPARTMENT_NAME
+FROM
+    HR_EMPLOYEES   E
+    JOIN HR_DEPARTMENTS DE
+    ON E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    LEFT JOIN HR_INCENTIVES IC
+    ON E.EMPLOYEE_ID = IC.EMPLOYEE_ID
+WHERE
+    IC.EMPLOYEE_ID IS NULL;
+
+--- Question 5.3 ---
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME,
+    DE.DEPARTMENT_NAME
+FROM
+    HR_EMPLOYEES   E
+    LEFT JOIN HR_DEPARTMENTS DE
+    ON E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    JOIN HR_INCENTIVES IC
+    ON E.EMPLOYEE_ID = IC.EMPLOYEE_ID
+WHERE
+    DE.DEPARTMENT_ID IS NULL;
+
+--- Question 5.4 ---
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME,
+    DE.DEPARTMENT_NAME
+FROM
+    HR_EMPLOYEES   E
+    LEFT JOIN HR_DEPARTMENTS DE
+    ON E.DEPARTMENT_ID = DE.DEPARTMENT_ID
+    LEFT JOIN HR_INCENTIVES IC
+    ON E.EMPLOYEE_ID = IC.EMPLOYEE_ID
+WHERE
+    DE.DEPARTMENT_ID IS NULL;

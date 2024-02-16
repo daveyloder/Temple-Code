@@ -1,1 +1,4 @@
-Because something something.
+Assuming that x and t are nodes in a linked list. 
+1. `t.next = x.next;` sets the next node of `t` to the next node of `x`.
+2. `x.next = t;` changes the next reference to the node of `t`.
+While this runs it will continue to run with no end and constantly change the value of `t` to whatever `x.next` is.

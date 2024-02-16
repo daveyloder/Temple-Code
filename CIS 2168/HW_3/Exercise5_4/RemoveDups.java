@@ -1,6 +1,7 @@
 package HW_3.Exercise5_4;
 
 public class RemoveDups {
+
     // Input class
     public static class LinkedList {
         public int value;
@@ -12,7 +13,7 @@ public class RemoveDups {
         }
     }
 
-    public LinkedList deDup(LinkedList first) {
+    public static LinkedList deDup(LinkedList first) {
         // code here, shouldn't be more than 7 lines
         while (first != null && first.next != null) {
             if (first.value == first.next.value) {
@@ -24,4 +25,24 @@ public class RemoveDups {
         return first;
     }
 
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList(1);
+        list.next = new LinkedList(2);
+        list.next.next = new LinkedList(2);
+        list.next.next.next = new LinkedList(3);
+        // System.out.println("Before remove duplicates");
+        // while (list != null) {
+        // System.out.print(list.value + " ->");
+        // list = list.next;
+        // }
+
+        // deDup the list
+        deDup(list);
+        System.out.println("After remove duplicate");
+        while (list != null) {
+            System.out.print(list.value + " ->");
+            list = list.next;
+        }
+
+    }
 }

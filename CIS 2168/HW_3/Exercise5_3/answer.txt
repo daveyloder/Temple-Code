@@ -1,1 +1,4 @@
-The effect of "node.next = node.next.next;" if node is not the last is that it will skip the next linked node and move onto the following link of the node. If that code snippet is the last node or over the last node, it should return null baed off of what we made in the Node.java file.
+The effect of "node.next = node.next.next;" 
+if node is not the last is that it will skip the next linked node and move onto the following link of the node. 
+If that code snippet is the last node or over the last node, it should return null based off of what we made in the Node.java file.
+basically overwrites the lined node with the following node after it.

@@ -1,4 +1,4 @@
-package HW_3.Exercise5_10;
+package Feb_14_2024;
 
 public class LinkedListPractice {
     Node first;
