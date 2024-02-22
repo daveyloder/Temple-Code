@@ -1,0 +1,33 @@
+List size   Time taken by get() Time taken by next()
+50,000      4222.7              1759
+100,000     10489.7             3005.3
+200,000     44007               8621.7
+400,000     207227.7            14281.7
+(800,000)  (1211969.7)          (37556.4)
+
+
+What, approximately, are the ratios T(2n)/T(n) (the middle column)?
+row 1 - 2.484
+row 2 - 4.195
+row 3 - 4.708
+row 4 - 5.848
+
+What, approximately, are the ratios T′(2n)/T′(n) (the third column)?
+row 1 - 1.708
+row 2 - 2.868
+row 3 - 1.656
+row 4 - 2.629
+
+Given the measurements obtained, what is your best guess about the order of
+growth of T(n)?
+
+The order of growth is that each test increases by a ratio of 4
+
+Given the measurements obtained, what is your best guess about the order of
+growth of T′(n)?
+
+This one is more clear with a ratio of 1 then 2 with a pattern flipping back and forth.
+
+Which method is more efficient, list.get() or iterator.next()? Why?
+
+Itereator.next() is way more efficient as it has smaller ratios and is able to complete task in faster times than what list.get() can get.
