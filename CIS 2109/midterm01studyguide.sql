@@ -1,58 +1,54 @@
--- Question 1 --
+--- Lab 2 Review ---
+--- Question 1 ---
 SELECT
-    HR_EMPLOYEES.FIRST_NAME,
-    HR_EMPLOYEES.LAST_NAME,
-    HR_EMPLOYEES.HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    FIRST_NAME,
+    LAST_NAME,
+    HIRE_DATE,
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 ORDER BY
     LAST_NAME;
 
--- Question 2a
+--- Question 2a ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
     EMPLOYEE_ID > 150;
 
--- Question 2b
+--- Question 2b ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    FIRST_NAME LIKE 'D%'
-ORDER BY
-    LAST_NAME;
+    FIRST_NAME LIKE 'D%';
 
--- Question 2c --
+--- Question 2c ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    FIRST_NAME LIKE '%D%'
-    OR FIRST_NAME LIKE '%d%'
-ORDER BY
-    LAST_NAME;
+    FIRST_NAME LIKE '%D%';
 
--- Question 2d --
+--- Question 2d ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
@@ -60,98 +56,89 @@ WHERE
 ORDER BY
     LAST_NAME;
 
--- Question 2e --
+--- Question 2e ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    HIRE_DATE > '01-MAR-06'
+    HIRE_DATE > TO_DATE('01-MAR-06', 'DD-MON-YY')
 ORDER BY
     LAST_NAME;
 
--- Question 2f --
+--- Question 2f ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    SALARY BETWEEN 10000 AND 12000
-ORDER BY
-    LAST_NAME;
+    SALARY BETWEEN 10000 AND 12000;
 
--- Question 2g --
+--- Question 2g ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    JOB_ID ='FI_ACCOUNT'
-    OR JOB_ID = 'SA_MAN'
-ORDER BY
-    LAST_NAME;
+    JOB_ID = 'FL_ACCOUNT'
+    OR JOB_ID = 'SA_MAN';
 
--- Question 2h --
+--- Question 2h ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    PHONE_NUMBER,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    SUBSTR(PHONE_NUMBER, 1, 3) = '515'
-ORDER BY
-    LAST_NAME;
+    SUBSTR(PHONE_NUMBER, 1, 3) = '515';
 
--- Question 2i --
+--- Question 2i ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     HIRE_DATE,
-    NVL(HR_EMPLOYEES.COMMISSION_PCT, 0)
+    NVL(COMMISSION_PCT, 0)
 FROM
     HR_EMPLOYEES
 WHERE
-    DEPARTMENT_ID IS NULL
-ORDER BY
-    LAST_NAME;
+    DEPARTMENT_ID IS NULL;
 
--- Question 3 --
+--- Question 3 ---
 SELECT
     AVG(SALARY)
 FROM
     HR_EMPLOYEES;
 
--- Question 4 --
+--- Question 4 ---
 SELECT
     FIRST_NAME,
     LAST_NAME,
     SALARY,
-    ROUND(SALARY * 03.8398, 2) AS ROUNDED_CITY_TAX
+    ROUND(SALARY * 0.38398, 2) AS ROUNDED_CITY_TAX
 FROM
     HR_EMPLOYEES
 ORDER BY
     ROUNDED_CITY_TAX DESC;
 
--- Question 5 --
+--- Question 5 ---
 SELECT
     COUNT(DEPARTMENT_ID)       AS TOTAL_DEPARTMENTS,
     COUNT(*)-COUNT(MANAGER_ID) AS TOTAL_DEPARTMENTS_WITHOUT_MANAGERS
 FROM
     HR_DEPARTMENTS;
 
--- Question 6 --
+--- Question 6 ---
 SELECT
     EMPLOYEE_ID,
     JOB_ID,
@@ -160,7 +147,7 @@ SELECT
 FROM
     HR_JOB_HISTORY;
 
--- Question 7 --
+--- Question 7 ---
 SELECT
     EMPLOYEE_ID,
     FIRST_NAME,
@@ -168,10 +155,10 @@ SELECT
 FROM
     HR_EMPLOYEES
 WHERE
-    MANAGER_ID IS NULL
-    AND COMMISSION_PCT IS NULL;
+    COMMISSION_PCT IS NULL
+    AND MANAGER_ID IS NULL;
 
--- Question 8 --
+--- Question 8 ---
 SELECT
     EMPLOYEE_ID,
     FIRST_NAME,
@@ -179,10 +166,10 @@ SELECT
 FROM
     HR_EMPLOYEES
 WHERE
-    MANAGER_ID IS NULL
-    OR COMMISSION_PCT IS NULL;
+    COMMISSION_PCT IS NULL
+    OR MANAGER_ID IS NULL;
 
--- Question 9a --
+--- Question 9a ---
 SELECT
     EMPLOYEE_ID,
     FIRST_NAME,
@@ -196,7 +183,7 @@ WHERE
     AND SALARY >=8000
     OR JOB_ID LIKE 'FI_ACCOUNT';
 
--- Question 9b --
+--- Question 9b ---
 SELECT
     EMPLOYEE_ID,
     FIRST_NAME,
@@ -208,10 +195,10 @@ FROM
 WHERE
     JOB_ID LIKE 'IT_PROG'
     AND SALARY >=8000
-    OR JOB_ID LIKE'FI_ACCOUNT'
+    OR JOB_ID LIKE 'FI_ACCOUNT'
     AND SALARY >= 8000;
 
--- Question 10a --
+--- Question 10a ---
 SELECT
     MANAGER_ID,
     JOB_ID,
@@ -222,7 +209,7 @@ ORDER BY
     MANAGER_ID,
     SALARY;
 
--- Question 10b --
+--- Question 10b ---
 SELECT
     MANAGER_ID,
     JOB_ID,
@@ -233,7 +220,7 @@ ORDER BY
     MANAGER_ID,
     SALARY DESC;
 
--- Question 10c --
+--- Question 10c ---
 SELECT
     MANAGER_ID,
     JOB_ID,
@@ -242,33 +229,35 @@ FROM
     HR_EMPLOYEES
 ORDER BY
     MANAGER_ID DESC,
-    SALARY DESC;
+    SALARY;
 
--- Question 11a --
+--- Question 11a ---
 SELECT
-    COUNT(LOCATION_ID)
+    COUNT(*)
 FROM
     HR_LOCATIONS;
 
--- Question 11b --
+--- Question 11b ---
 SELECT
     COUNTRY_ID,
-    COUNT(LOCATION_ID)
+    COUNT(*)
 FROM
     HR_LOCATIONS
 GROUP BY
     COUNTRY_ID;
 
--- Question 12 --
+--- Question 12 ---
 SELECT
     COUNTRY_ID,
-    LOCATION_ID
+    COUNT(LOCATION_ID) AS NUM_LOCATIONS
 FROM
     HR_LOCATIONS
-WHERE
+GROUP BY
+    COUNTRY_ID
+HAVING
     COUNT(LOCATION_ID) >= 2;
 
--- Question 13 --
+--- Question 13 ---
 SELECT
     DEPARTMENT_ID,
     COUNT(EMPLOYEE_ID) AS EMPLOYEE_COUNT
@@ -279,7 +268,7 @@ GROUP BY
 ORDER BY
     EMPLOYEE_COUNT DESC;
 
--- Question 14a --
+--- Question 14a ---
 SELECT
     TO_CHAR(HIRE_DATE, 'yyyy'),
     COUNT(EMPLOYEE_ID)
@@ -288,7 +277,7 @@ FROM
 GROUP BY
     TO_CHAR(HIRE_DATE, 'yyyy');
 
--- Question 14b --
+--- Question 14b ---
 SELECT
     TO_CHAR(HIRE_DATE, 'yyyy'),
     COUNT(EMPLOYEE_ID)
@@ -299,7 +288,7 @@ WHERE
 GROUP BY
     TO_CHAR(HIRE_DATE, 'yyyy');
 
--- Question 14c --
+--- Question 14c ---
 SELECT
     TO_CHAR(HIRE_DATE, 'yyyy'),
     COUNT(EMPLOYEE_ID)
@@ -310,7 +299,7 @@ WHERE
 GROUP BY
     TO_CHAR(HIRE_DATE, 'yyyy');
 
--- Question 14d --
+--- Question 14d ---
 SELECT
     TO_CHAR(HIRE_DATE, 'yyyy'),
     COUNT(EMPLOYEE_ID)
@@ -321,7 +310,7 @@ GROUP BY
 HAVING
     COUNT(EMPLOYEE_ID) > 2;
 
--- Question 14e --
+--- Question 14e ---
 SELECT
     DEPARTMENT_ID,
     TO_CHAR(HIRE_DATE, 'yyyy'),

@@ -1,0 +1,21 @@
+SELECT
+    E.FIRST_NAME,
+    E.LAST_NAME
+FROM
+    HR_EMPLOYEES   E
+    INNER JOIN HR_DEPARTMENTS DE
+    ON E.EMPLOYEE_ID = DE.MANAGER_ID;
+
+--- sub query ---
+SELECT
+    FIRST_NAME,
+    LAST_NAME
+FROM
+    HR_EMPLOYEES   E
+WHERE
+    E.EMPLOYEE_ID IN(
+        SELECT
+            MANAGER_ID
+        FROM
+            HR_DEPARTMENTS
+    );
