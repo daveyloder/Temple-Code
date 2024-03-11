@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="OS_Tablet_Relation" directorySegmentName="seg_0" id="A19667D3-1876-9365-4F81-4972BF87BB6C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:31:02 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<sourcePk>F902264D-2DD1-8E79-BCE3-8BA49AA1C1C3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>51FB05E6-2A8F-768A-8693-2ED3A1E47CDD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>234A11DF-646B-782D-4364-9872B5836246</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

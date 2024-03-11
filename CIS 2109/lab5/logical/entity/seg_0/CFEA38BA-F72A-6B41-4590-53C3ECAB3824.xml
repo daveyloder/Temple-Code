@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CFEA38BA-F72A-6B41-4590-53C3ECAB3824" name="Certifications">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:32:18 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cert_ID" id="899301FC-69EE-3943-4DAB-6B6F249EBB99">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:32:41 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cert_Complete_Date" id="5AF9EE80-1A5D-0B23-4C93-BD31343E8CF9">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:32:54 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cert_Expiration" id="A8249068-D8E7-5183-A8C3-2C6654A82514">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:33:15 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tablet_ID" id="FF83BD07-13BF-6046-C1B1-80A18DF32EF8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:34:09 UTC</createdTime>
+<generatorID>591A6468-4FD9-0B4C-33F6-BF9D6D1D01AF</generatorID>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<referedAttribute>B31F62A3-033F-20FE-605A-375384039194</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="40A150CD-13D3-2B48-4413-738BB7DFC3D9" name="Certifications PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:32:46 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>899301FC-69EE-3943-4DAB-6B6F249EBB99</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

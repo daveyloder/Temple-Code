@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="234A11DF-646B-782D-4364-9872B5836246" name="Tablets">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:21:30 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Tablet_ID" id="B31F62A3-033F-20FE-605A-375384039194">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:21:38 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tablet_Name" id="C7530017-BEAD-FE12-88FE-5E5A640670E6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:21:54 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Storage_Space" id="8C52F15D-FF9A-5374-EC12-70942EB05B31">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:22:36 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Display_Type" id="7FEDF629-7AC2-6163-DD32-A2DEA8735878">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:22:59 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Processor_ID" id="744D17F1-88FE-D746-5A48-4B88A79F1B7E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:29:38 UTC</createdTime>
+<generatorID>F6D51E10-6179-BF96-DC6F-143007F916AE</generatorID>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<referedAttribute>05BDA7B9-3368-E4CF-55A7-4A29AB3AFF50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OS_ID" id="B74BB467-9F5F-C10B-5B3F-BEA553D01719">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:31:02 UTC</createdTime>
+<generatorID>A19667D3-1876-9365-4F81-4972BF87BB6C</generatorID>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<referedAttribute>56EA60B7-FC21-ABCF-9C13-8B1E42F9010C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cert_ID" id="F31FFF72-F07E-7E06-5F5E-5472130CC980">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:33:44 UTC</createdTime>
+<generatorID>591A6468-4FD9-0B4C-33F6-BF9D6D1D01AF</generatorID>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<referedAttribute>899301FC-69EE-3943-4DAB-6B6F249EBB99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="89281510-2CBC-6DBA-BF79-9363CD4564C8" name="Tablets PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-11 21:21:43 UTC</createdTime>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B31F62A3-033F-20FE-605A-375384039194</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
