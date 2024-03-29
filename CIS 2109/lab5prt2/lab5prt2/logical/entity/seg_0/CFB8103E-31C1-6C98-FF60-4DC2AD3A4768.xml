@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CFB8103E-31C1-6C98-FF60-4DC2AD3A4768" name="Soloist">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:05:41 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Solo_Id" id="E7B63361-15E6-176C-2124-663A32D06C35">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:27:56 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_Last_Performed" id="7A50A99E-BB77-AE3C-CEC9-53EAB5359EA5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:28:26 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B11DFA29-1A05-0B18-43C8-D724C452921D" name="Soloist PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:30:45 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E7B63361-15E6-176C-2124-663A32D06C35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

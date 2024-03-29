@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3CC8A311-F02D-D55D-A767-CA010F79A6F4" name="Products">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:46:27 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Product_No" id="4E152C9F-9C23-72C3-1CE8-894A98AD0A64">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:51:19 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description" id="0F1552E5-E4D0-1F20-320A-C5D35894A065">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:52:37 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cost" id="C15C6728-6A93-0181-A88D-BDC7EA3E9FEC">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:52:47 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Project_Id" id="B34BB097-EFD1-446B-2A4E-C5A3AED89A3E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 20:04:43 UTC</createdTime>
+<generatorID>F57D3A7A-C3C2-F657-36D5-0076AD0F6819</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<referedAttribute>A39FAAF2-BEAE-1136-6320-0008C64AA18F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9D390231-43FB-DC03-2E9E-8EF2B994C0AB" name="Products PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:51:50 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E152C9F-9C23-72C3-1CE8-894A98AD0A64</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

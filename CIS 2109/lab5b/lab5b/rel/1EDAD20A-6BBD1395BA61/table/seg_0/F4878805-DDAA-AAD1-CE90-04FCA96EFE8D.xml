@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4878805-DDAA-AAD1-CE90-04FCA96EFE8D" name="Components to Products">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<comment><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></comment>
+<commentInRDBMS><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></commentInRDBMS>
+<ownerDesignName>lab5b</ownerDesignName>
+<ordsAlias>relation_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Products_Product_No" id="AC299098-4F26-AA24-1980-A62F9DF7D522">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE4DF4ED-D092-CA6B-0820-A032B7EC66F6" referredColumn="C268988D-D0A0-61D8-2578-B897B7E6868A"/>
+</associations>
+</Column>
+<Column name="Components_Component_No" id="BC40A522-2FD0-158A-37B0-3D0C4C20250F">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B4CA42F-D5FF-64D0-B8C1-0AB4BC25A3D7" referredColumn="0AAAD0A3-C51A-E584-F1F0-7DF7091A47C7"/>
+</associations>
+</Column>
+<Column name="Component_Count" id="E2BFD0CC-C5A2-994F-2236-F257A7395DE3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>91DF727C-0858-5BE7-2701-68D1E33C7055</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="806BF75B-6ED9-542F-1258-2919D67CDAE8" name="Relation_4_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC299098-4F26-AA24-1980-A62F9DF7D522"/>
+<colUsage columnID="BC40A522-2FD0-158A-37B0-3D0C4C20250F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8F26C9B-2FF9-4128-142F-678B9B252022" name="Relation_4_Products_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>10AE0C2A-A892-5D13-4A05-8FA22B78D0BD</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC299098-4F26-AA24-1980-A62F9DF7D522"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AECA8A6-EBA6-9B9D-28C0-7B730D1604EE" name="Relation_4_Components_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>10AE0C2A-A892-5D13-4A05-8FA22B78D0BD</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC40A522-2FD0-158A-37B0-3D0C4C20250F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

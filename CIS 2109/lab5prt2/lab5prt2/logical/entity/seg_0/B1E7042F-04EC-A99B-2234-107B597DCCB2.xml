@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1E7042F-04EC-A99B-2234-107B597DCCB2" name="Seasons">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:03:30 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Opening_Date" id="306274E2-227F-8015-92A1-43B451BAE525">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:04:34 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dur_inMonths" id="CF890038-9BEB-4F45-6491-64C95BE60DBD">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:46:34 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="InSeason" id="76228FE5-8BD4-831D-D63F-8D63C51282A0">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:46:59 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="114E36A2-F308-33CD-3EB1-29379A6BC9DE" name="Seasons PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:09:16 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="215BC709-5721-EF76-A445-029D9377BC17" name="Conductor">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:22:35 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Conduct_Id" id="4DC7CF62-7291-5109-E8AD-D88787C3AD8D">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:25:46 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Conductor_Name" id="971CC219-077B-7466-7A4F-7E7D06355E29">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:24:34 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Years_Of_Exp" id="C6A00F4E-45C2-F50B-B169-5352A0132721">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:25:03 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Degree" id="E44E155C-85DC-8D00-C3DE-22E0774D10DE">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:25:20 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="30D55FD9-AE34-931D-492B-531453108CCA" name="Conductor PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:26:05 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4DC7CF62-7291-5109-E8AD-D88787C3AD8D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

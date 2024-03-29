@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E46121B-7A7B-9957-7880-CB3E1987436E" name="Restorations">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:07:06 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Restoration_ID" id="3526D4B2-A16B-B5F6-283E-A1F093DEE82B">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:07:17 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Start_Date" id="AA58761F-9157-8E8C-5EAB-973AB8354541">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:07:43 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End_Date" id="A0D8DD44-E529-D02F-0F41-8DA0D19B4114">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:08:23 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Restoration_Cost" id="64503931-3E14-9FF7-60A8-158B1D25759C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:08:34 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Expected_Value" id="09068D53-1AD2-B56B-787F-0F9C7B0C0777">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:08:51 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comments" id="E0EE2FBF-1171-08D0-BDB7-AA0B3DF3552E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:09:18 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Expert_ID" id="A3D550FB-ABFF-6D20-ABFC-B50497F13C1E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:11:47 UTC</createdTime>
+<generatorID>594AE69C-71C4-4C7A-C8C1-ECF03C400263</generatorID>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<referedAttribute>982D6BFF-E281-9B3C-35A3-97CBF33265B2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Item_No" id="DCB11EA1-EF53-D54A-7797-8C800AD5B9EB">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:12:48 UTC</createdTime>
+<generatorID>70675E61-59ED-ED76-B89A-E1A874AC5AD2</generatorID>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<referedAttribute>5BA005C0-6586-915E-4334-0BAD8A5B83FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DCF43B56-F10B-7259-FAF9-DEF8E7A0F3EA" name="Restorations PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:07:41 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3526D4B2-A16B-B5F6-283E-A1F093DEE82B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

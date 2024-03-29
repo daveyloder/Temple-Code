@@ -11,6 +11,15 @@ public class BSTClient {
         bst.add(6);
         bst.add(8);
 
+        System.out.println("In-Order Traversal:");
+        bst.inorderTraversal();
+        System.out.println();
+        System.out.println("Pre-Order Traversal:");
+        bst.preorderTraversal();
+        System.out.println();
+        System.out.println("Post-Order Traversal:");
+        bst.postorderTraversal();
+        System.out.println();
         System.out.println("Level-Order Traversal:");
         bst.levelOrder();
     }

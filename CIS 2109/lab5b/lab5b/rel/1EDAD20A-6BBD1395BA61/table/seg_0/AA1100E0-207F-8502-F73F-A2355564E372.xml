@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA1100E0-207F-8502-F73F-A2355564E372" name="Projects">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<comment><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></comment>
+<commentInRDBMS><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></commentInRDBMS>
+<generatorID>6E2A54EF-A4D0-FB66-A1C8-0FDA3235B1A3</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Project_Id" id="9BD152C5-1433-3BB2-D25D-F0D8A444B380">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>A39FAAF2-BEAE-1136-6320-0008C64AA18F</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Project_Name" id="FDA58419-726F-6E81-553B-048B8378B240">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>3B4EDB01-8B99-8933-D295-6581580D9299</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Start_Date" id="D1EF8543-E698-E154-B8D4-723715542DA7">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>59D98C6A-C44A-50A8-461A-435C613783B5</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DAC1567-A92D-7715-6E13-CADA7997A629" name="Projects_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>8BF7E85B-6F6B-485C-A8EB-8619F31A0347</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BD152C5-1433-3BB2-D25D-F0D8A444B380"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

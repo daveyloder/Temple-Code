@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0A59F56-F66C-CD4B-9411-11A006DA6B76" name="Assignment">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<comment><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></comment>
+<commentInRDBMS><![CDATA[Comments?]]></commentInRDBMS>
+<generatorID>29EFA633-410C-B8C2-4024-DF429F3B3C78</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Billing_Rate" id="259D90A3-0406-47D7-6288-EB749FA94878">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>79BDFDFB-FE5E-B48C-F5E7-4DAFCDA00D30</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Employees_Emp_ID" id="32174B98-0267-5B26-F047-9C67E134CCF0">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>1D481A39-1594-15BE-3341-28A35570FF85</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA069735-21C2-D242-5D70-79D89DEC6779" referredColumn="C7440277-1D57-2D92-16AE-CF2906B212F8"/>
+</associations>
+</Column>
+<Column name="Projects_Project_Id" id="B2276D58-F990-F3FC-D151-203CE00D82CE">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>D84C237A-C335-D6C2-C544-060E25533F21</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E2DA183-014F-9079-43F1-9B5EFE5F1102" referredColumn="9BD152C5-1433-3BB2-D25D-F0D8A444B380"/>
+</associations>
+</Column>
+<Column name="Start_Date" id="35FBB8A1-E522-C905-BF1E-A5C17EF0AA39">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>C9EBC438-8825-72AB-B21A-17F23A3573C6</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_Date" id="A347B7FA-CC1E-76AA-ED74-F1B50C547B86">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>DEF0E8B9-1485-99DA-4DF2-95DA75E05359</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2231F60B-4677-9F9B-7C4C-2BDA5CEC302B" name="Assignment_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>35A8CFF3-90D1-4173-C3BF-3AA9B8EB669B</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32174B98-0267-5B26-F047-9C67E134CCF0"/>
+<colUsage columnID="B2276D58-F990-F3FC-D151-203CE00D82CE"/>
+<colUsage columnID="35FBB8A1-E522-C905-BF1E-A5C17EF0AA39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C79F4A79-7916-697A-2B2A-E8232BDAA54C" name="Assignment_Employees_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>932C5D2D-87DF-0FB9-1F23-EC0C0409072D</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32174B98-0267-5B26-F047-9C67E134CCF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5252EC7E-EBE3-927E-83FD-4B22FDA6FBEA" name="Assignment_Projects_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>4BDD8F1B-B849-E75E-EB11-7B1B02257499</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2276D58-F990-F3FC-D151-203CE00D82CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

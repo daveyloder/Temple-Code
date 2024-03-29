@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEB615E9-32DC-CE58-EDCF-E2BACB3CE927" name="Concerts">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:57:56 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Concert_Id" id="68768B96-7AD5-3304-17F8-8EAB47D202FF">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:58:14 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Total_Tickets" id="2918AAED-109F-9691-16EB-EAF1C0EC51DA">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:58:37 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Concert_Date" id="3E1806DC-8DB7-B36F-3E98-45F63B357A53">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:59:16 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Conduct_Id" id="6D34F750-CFE6-B76A-54F5-2EC3A10A9260">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:26:50 UTC</createdTime>
+<generatorID>186A327F-7F69-FF6F-2286-6B58F0B40E97</generatorID>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<referedAttribute>4DC7CF62-7291-5109-E8AD-D88787C3AD8D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="54CC4375-3D62-46BE-6CBC-F0D07D2EBC3D" name="Concerts PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:58:34 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68768B96-7AD5-3304-17F8-8EAB47D202FF</attributeRef>
+<attributeRef>6D34F750-CFE6-B76A-54F5-2EC3A10A9260</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

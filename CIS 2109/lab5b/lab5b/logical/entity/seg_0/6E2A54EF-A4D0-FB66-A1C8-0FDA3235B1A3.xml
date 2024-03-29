@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E2A54EF-A4D0-FB66-A1C8-0FDA3235B1A3" name="Projects">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:25:09 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Project_Id" id="A39FAAF2-BEAE-1136-6320-0008C64AA18F">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:25:20 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Project_Name" id="3B4EDB01-8B99-8933-D295-6581580D9299">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:25:31 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Start_Date" id="59D98C6A-C44A-50A8-461A-435C613783B5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:25:45 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8BF7E85B-6F6B-485C-A8EB-8619F31A0347" name="Projects PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:25:29 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A39FAAF2-BEAE-1136-6320-0008C64AA18F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

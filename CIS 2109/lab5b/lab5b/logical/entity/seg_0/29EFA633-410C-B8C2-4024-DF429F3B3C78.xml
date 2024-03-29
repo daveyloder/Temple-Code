@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29EFA633-410C-B8C2-4024-DF429F3B3C78" name="Assignment">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:30:33 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Billing_Rate" id="79BDFDFB-FE5E-B48C-F5E7-4DAFCDA00D30">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:31:26 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Emp_ID" id="1D481A39-1594-15BE-3341-28A35570FF85">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:34:36 UTC</createdTime>
+<generatorID>932C5D2D-87DF-0FB9-1F23-EC0C0409072D</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<referedAttribute>3AFA2369-5813-A137-6B11-1942F9A84597</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Project_Id" id="D84C237A-C335-D6C2-C544-060E25533F21">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:35:03 UTC</createdTime>
+<generatorID>4BDD8F1B-B849-E75E-EB11-7B1B02257499</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<referedAttribute>A39FAAF2-BEAE-1136-6320-0008C64AA18F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Start_Date" id="C9EBC438-8825-72AB-B21A-17F23A3573C6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 20:23:07 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End_Date" id="DEF0E8B9-1485-99DA-4DF2-95DA75E05359">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 20:23:20 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35A8CFF3-90D1-4173-C3BF-3AA9B8EB669B" name="Assignment PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 19:36:10 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1D481A39-1594-15BE-3341-28A35570FF85</attributeRef>
+<attributeRef>D84C237A-C335-D6C2-C544-060E25533F21</attributeRef>
+<attributeRef>C9EBC438-8825-72AB-B21A-17F23A3573C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

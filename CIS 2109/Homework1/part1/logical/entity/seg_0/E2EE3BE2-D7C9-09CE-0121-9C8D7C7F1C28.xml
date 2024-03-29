@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2EE3BE2-D7C9-09CE-0121-9C8D7C7F1C28" name="Purchases">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 00:58:10 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Purchase_ID" id="AA1BE00D-2ACC-C34B-F389-BFE8C24241A6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 00:58:17 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Purchase_Cost" id="7F40B7FB-B3F6-4B40-F4DE-5BA0FE858C77">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:00:43 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_Purchased" id="346576BE-4710-8B48-CC31-8FABDB23EA47">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:00:59 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Condition_At_Purchase" id="EB2034E3-9E88-2B94-EB06-411EB607E852">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:01:13 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Item_No" id="B1F0F44A-B854-2486-828D-8F65A6E1C9A7">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:04:11 UTC</createdTime>
+<generatorID>659AAD75-655B-4F44-FC8E-2AA3B6F948AE</generatorID>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<referedAttribute>5BA005C0-6586-915E-4334-0BAD8A5B83FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Client_ID" id="D208E3B8-8E47-7D74-81F9-0C8CC8ACFF3C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:05:44 UTC</createdTime>
+<generatorID>687093C8-43C4-AFC3-D125-DE5A36BA39A5</generatorID>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<referedAttribute>A86BE368-B2D4-0663-A94F-15344C994E1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BDD01758-45F0-5F60-967A-CA3C614E1E87" name="Purchases PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 00:58:40 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AA1BE00D-2ACC-C34B-F389-BFE8C24241A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

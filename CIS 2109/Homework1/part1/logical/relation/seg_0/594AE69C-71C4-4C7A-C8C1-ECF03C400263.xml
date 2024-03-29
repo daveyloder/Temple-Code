@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Restorations via Experts" directorySegmentName="seg_0" id="594AE69C-71C4-4C7A-C8C1-ECF03C400263">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:11:47 UTC</createdTime>
+<ownerDesignName>part1</ownerDesignName>
+<engineerTo>
+<item key="6FCA3535-EAEF-3A70-6463-79F7ED506833" value="true"/>
+</engineerTo>
+<sourcePk>F8325536-6690-CC81-F763-D34100A44A24</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>35BD0A4E-EB6D-6982-D8C6-FABABDC51DAF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6E46121B-7A7B-9957-7880-CB3E1987436E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

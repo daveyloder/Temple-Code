@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B764164-EE93-B8DE-3193-08817C9E24C3" name="Compositions">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:05:18 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Comp_ID" id="51C55CCC-374F-B4C7-E3C1-7F656799254D">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:09:23 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comp_Title" id="9474D12D-4F94-CF5F-12C9-9479CD2104B6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:09:34 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Composer_Name" id="124C8725-EB9C-B255-1F82-326B0C3F3DB2">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:18:18 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Solo_Id" id="96941B48-E2D3-2085-7218-8E170FD89FF8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 00:30:47 UTC</createdTime>
+<generatorID>586D7F1A-D922-EE7D-81C3-1030EAEA785A</generatorID>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<referedAttribute>E7B63361-15E6-176C-2124-663A32D06C35</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="00B46377-DD71-0CA1-F193-2646569E675C" name="Compositions PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 23:09:32 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<engineerTo>
+<item key="3C99428D-17B5-F490-D150-78A88D7DA61E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>51C55CCC-374F-B4C7-E3C1-7F656799254D</attributeRef>
+<attributeRef>96941B48-E2D3-2085-7218-8E170FD89FF8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="lab5prt2" id="2590EC15-46EC-881E-0BC5-04C9D156342F" version="3.5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:56:52 UTC</createdTime>
+<ownerDesignName>lab5prt2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2590EC15-46EC-881E-0BC5-04C9D156342F</designId>
+</OSDM_Design>

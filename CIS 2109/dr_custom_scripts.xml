@@ -550,7 +550,6 @@ if(template!=null){
 }]]>
 		</script>
 	</scr>
-
 	<scr id="D36CE536-D575-BE5C-625F-23DE23913C6B" name="Complex rule - check comments demo" object="Table" engine="Oracle Nashorn" type="Warning" var="table" library="my first library" method="checkcomments" purpose="validation" >
 		<script>
 			<![CDATA[]]>
@@ -656,6 +655,11 @@ end]]>
 		</script>
 	</lib>
 
+	<ruleset id="65AC3D2F-E287-0D7B-FDBD-380B690AD288" name="RuleSet_1">
+			<rule id="ACB60AC9-1649-4021-009C-AA019E6E3228"/>
+			<rule id="57128D30-B9BC-3824-E2BC-A685CAF0C728"/>
+			<rule id="F925ECDE-98B3-786C-ED03-C2D3C7C364F9"/>
+	</ruleset>
 
 	<ddl_transformation_script_set id="B4E65BCB-CFF5-1302-E0BC-0C329BF9890E" name="Journal tables" description="" active="true">
 			<script id="9836D087-881D-2161-19AF-2C6DF49A964A"/>

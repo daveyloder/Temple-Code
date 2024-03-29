@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="C7CB0B53-23C4-FA3D-A702-3FFE432F5E65">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 20:02:48 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<targetPk>8AEF81D8-9A47-2573-A9D1-18804409181B</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8553E6E5-5147-4560-6E40-C1A1305BFEB5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8553E6E5-5147-4560-6E40-C1A1305BFEB5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Component_Count" id="493AE32A-EBEA-4A66-4EE5-E1ADDB534BF9">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-15 20:04:15 UTC</createdTime>
+<ownerDesignName>lab5b</ownerDesignName>
+<engineerTo>
+<item key="1EDAD20A-B332-BA73-AA46-6BBD1395BA61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

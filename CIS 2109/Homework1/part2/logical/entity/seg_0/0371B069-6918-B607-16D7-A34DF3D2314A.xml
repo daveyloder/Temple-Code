@@ -79,21 +79,6 @@
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Nurse_Id1" id="84357A9D-6633-AC20-2DF7-DF275AC1B638">
-<createdBy>David Loder</createdBy>
-<createdTime>2024-03-21 01:58:37 UTC</createdTime>
-<generatorID>0B648FA5-BF4D-C790-C187-C018E5969514</generatorID>
-<ownerDesignName>part2</ownerDesignName>
-<engineerTo>
-<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>93D47F86-4ECB-B0FF-3C35-83FB0A2FD2CB</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="1694E533-8514-3433-EFA9-C9BF5C15ADE6" name="Nurses PK">

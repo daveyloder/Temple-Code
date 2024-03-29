@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="529D87EC-BA98-A0AA-9EA1-17F8AE3AB0D3" name="Employees">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<comment><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></comment>
+<commentInRDBMS><![CDATA[Oh geez, okay, um, so like, imagine if databases were, like, living beings, right? Like, they had feelings and stuff. Well, an RDBMS would totally be like the responsible, organized, nerdy type. You know, the one who's always keeping track of everything, making sure every piece of data is in its right place, all neat and tidy. It's like, "Hey, I got your tables and your rows all sorted out, no sweat!" But, uh, don't get on its bad side, 'cause it's got some serious relational powers, and it won't hesitate to join, select, or update you into oblivion if you mess with it. So, yeah, an RDBMS is like that dependable friend who's always got your back, as long as you follow its rules, Morty.]]></commentInRDBMS>
+<generatorID>DAA4CB88-3833-40E5-F399-968FA0837040</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Emp_ID" id="C7440277-1D57-2D92-16AE-CF2906B212F8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>3AFA2369-5813-A137-6B11-1942F9A84597</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="382EBAF0-95DA-837A-95B8-6049A34B0693">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>99CB68DA-9DE8-C0DC-7FA6-9967B41037B8</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="5FAE05F7-FE33-1B8C-F4E1-E3F31CE23076">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>35763014-8528-4732-4D96-FC5C8FA686E4</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Birthdate" id="5A7A37B5-97B0-1AEA-24F4-8105CD1C36F7">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>6BD681AA-B9B8-7FB5-F07A-622EE2B366FA</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5C37830-BA86-586A-6D6B-9960BC8482B9" name="Employees_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-22 20:07:16 UTC</createdTime>
+<generatorID>8D52602E-7AB9-3ED0-6524-68626C0AD61C</generatorID>
+<ownerDesignName>lab5b</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7440277-1D57-2D92-16AE-CF2906B212F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

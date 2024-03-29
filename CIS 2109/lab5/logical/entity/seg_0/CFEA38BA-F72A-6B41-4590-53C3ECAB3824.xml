@@ -67,6 +67,34 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Processor_ID" id="3A558E19-05E6-5AEC-845C-5B1A2B831ED7">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:27:35 UTC</createdTime>
+<generatorID>591A6468-4FD9-0B4C-33F6-BF9D6D1D01AF</generatorID>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<referedAttribute>744D17F1-88FE-D746-5A48-4B88A79F1B7E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OS_ID" id="A6F049D0-1FEC-4A95-E40D-07A2B1D12924">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-14 22:27:41 UTC</createdTime>
+<generatorID>591A6468-4FD9-0B4C-33F6-BF9D6D1D01AF</generatorID>
+<ownerDesignName>lab5</ownerDesignName>
+<engineerTo>
+<item key="E07FBC4E-3F1F-732B-A67E-854582A5B084" value="true"/>
+</engineerTo>
+<referedAttribute>B74BB467-9F5F-C10B-5B3F-BEA553D01719</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="40A150CD-13D3-2B48-4413-738BB7DFC3D9" name="Certifications PK">

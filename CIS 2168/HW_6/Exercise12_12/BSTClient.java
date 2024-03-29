@@ -7,6 +7,9 @@ public class BSTClient {
         for (Integer key : keys) {
             bst.add(key);
         }
-        System.out.println(bst.contains(21));
+        // input number not in array
+        System.out.println(bst.contains(55));
+        // print number in array
+        System.out.println(13);
     }
 }
