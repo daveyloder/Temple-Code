@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0371B069-6918-B607-16D7-A34DF3D2314A" name="Nurses">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 01:30:45 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nurse_Id" id="93D47F86-4ECB-B0FF-3C35-83FB0A2FD2CB">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 19:50:31 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_info" id="045CF606-A610-2DA1-2A35-06EEFA3948F9">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 19:50:55 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SSN" id="F9D641F0-3C57-7300-511E-31D8A23F6E8D">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 19:51:09 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Salary" id="F614989B-3AD9-0A21-D270-C777857F6C02">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 19:51:30 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rank" id="B2B266FA-EA8D-F22D-3D81-52A85910455E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 19:51:40 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nurse_Id1" id="84357A9D-6633-AC20-2DF7-DF275AC1B638">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-21 01:58:37 UTC</createdTime>
+<generatorID>0B648FA5-BF4D-C790-C187-C018E5969514</generatorID>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>93D47F86-4ECB-B0FF-3C35-83FB0A2FD2CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1694E533-8514-3433-EFA9-C9BF5C15ADE6" name="Nurses PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-20 19:50:52 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="C151FBD6-999D-BF13-BC42-22D60EE0FF15" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>93D47F86-4ECB-B0FF-3C35-83FB0A2FD2CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
