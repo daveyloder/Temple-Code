@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EB390A1-059A-ACB5-53AD-39074B9CB61D" name="Vehicles">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>36379EE7-BB7E-B0B4-12A3-78130FC9D17B</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vehicle_ID" id="EA7ABF8E-463B-9ABC-CDDD-CB3FEEFD53E4">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>8DD42E46-7705-D649-C2B4-B9E21FB83EEA</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Make" id="4A917A13-17EF-53EC-708E-AC1B41B29336">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>7BBF792D-5ECF-90B5-5435-18870FAFCE8D</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Model" id="C7E8ACBA-3654-1297-2CC8-5347CEB1A909">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>52299D13-C142-3277-BB0B-707B67EA1117</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Year" id="A520380D-242D-EE1C-F266-847F35FF60E1">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>4C0473CE-858E-020F-259B-109CF380C7DD</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Engine_Type" id="54A397B5-FE85-D109-D1A3-24A4BF806232">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>DC15DE96-34D9-8009-9D81-6B76131DD5E6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0083265-7A46-BECB-2FE1-0D4BB2B9ABB1" name="Vehicles_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>FE82CC4F-694C-C7F7-E6BC-FBA8874748EF</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA7ABF8E-463B-9ABC-CDDD-CB3FEEFD53E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

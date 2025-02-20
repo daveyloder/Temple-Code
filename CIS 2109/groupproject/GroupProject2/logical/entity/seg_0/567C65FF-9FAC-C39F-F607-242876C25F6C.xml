@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="567C65FF-9FAC-C39F-F607-242876C25F6C" name="Vendor Logistics">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:33:49 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Tracking No" id="F7D617EE-ABD8-D977-6306-6EBA5B29B3B6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:33:55 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Carrier" id="6083E64F-C992-3148-00DB-747F308C68F8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:34:17 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Vendor ID" id="9E584B06-1539-280E-162A-2D15F5D716BB">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:35:25 UTC</createdTime>
+<generatorID>AFCED78F-F6BC-DAAA-A830-2AC3B72E9BF4</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>EE9ACD14-B03A-1B4A-5462-8E87310C9E53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WH ID" id="B6957C2F-C2A3-327A-A6EF-164A20F209D0">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:35:54 UTC</createdTime>
+<generatorID>36FD4571-18E3-C36A-FFA1-4C18258E9DC0</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>E8234E17-166F-F937-B302-67320B3F3D73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order ID" id="16540E4A-FE9B-78A9-092A-FFD18E9242F6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:36:07 UTC</createdTime>
+<generatorID>D4AF4DFF-1BDB-0250-65BD-867E49C1D20B</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>221A7BE5-5B73-8EB2-E1F7-FE4D0DABEF1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F66E3AA0-99FA-66FF-5D30-228E5EB8020D" name="Vendor Logistics PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:34:08 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7D617EE-ABD8-D977-6306-6EBA5B29B3B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

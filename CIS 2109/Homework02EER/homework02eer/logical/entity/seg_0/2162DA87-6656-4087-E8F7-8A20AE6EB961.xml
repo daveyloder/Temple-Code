@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2162DA87-6656-4087-E8F7-8A20AE6EB961" name="Researchers">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 18:19:45 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Person ID" id="DEB0368A-DA23-C5C3-333D-746D2A7BCECD">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 18:20:47 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone Number" id="8C91B790-0617-FC1B-68DF-FC6A816FE0E5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 18:52:12 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Keywords" id="7D7C0423-920E-D54B-7449-C3EBCE025EF3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 18:52:22 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Current Position" id="60D9D47D-B520-46B9-5D57-62D1E2E6DC0E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 18:52:50 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Institution Code" id="9D02E6A9-A5CC-AA76-9FC8-FB764AAE0F83">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:21:40 UTC</createdTime>
+<generatorID>DBEF98C9-DDA2-66D6-35E5-47E576217B82</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D4A3FA4E-19DA-E3A7-E605-EC1F17B1AAF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="037FAE5D-1306-6F1B-F8BD-E1B8F50D2AA5" name="Researchers PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 18:20:56 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>DEB0368A-DA23-C5C3-333D-746D2A7BCECD</newElementsIDs>
+<usedAttributes>
+<attributeRef>DEB0368A-DA23-C5C3-333D-746D2A7BCECD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

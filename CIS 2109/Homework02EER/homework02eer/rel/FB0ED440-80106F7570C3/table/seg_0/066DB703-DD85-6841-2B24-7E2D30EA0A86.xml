@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="066DB703-DD85-6841-2B24-7E2D30EA0A86" name="Researchers">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>2162DA87-6656-4087-E8F7-8A20AE6EB961</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_ID" id="13D359BD-3299-951C-8364-97A0A3122558">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>DEB0368A-DA23-C5C3-333D-746D2A7BCECD</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone_Number" id="E48256A9-8D14-281E-A9BD-57CA1BCA9350">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8C91B790-0617-FC1B-68DF-FC6A816FE0E5</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Keywords" id="343FEEEB-948A-53CE-ACC8-79F2713AAAD6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>7D7C0423-920E-D54B-7449-C3EBCE025EF3</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Current_Position" id="F6E62B47-DB56-E660-7BBD-0B8E1562624F">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>60D9D47D-B520-46B9-5D57-62D1E2E6DC0E</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Research_Institutions_Institution_Code" id="2A45CEFD-2744-3A59-A5B8-D5CF9AADE5C5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>7B850A33-8657-585E-0E97-78C0F67B0655</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A35DCAAF-4967-629D-A94E-AF00B7670C81" referredColumn="98EEEF8F-D024-F07C-7961-378A5CEE9ECD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43988F30-D96E-8D66-26B1-243D8E3C3828" name="Researchers_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>037FAE5D-1306-6F1B-F8BD-E1B8F50D2AA5</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13D359BD-3299-951C-8364-97A0A3122558"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DC21701-BC8E-725F-CC26-247726D7E963" name="Researchers_Research_Institutions_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>412D883A-7A4D-EAC2-550E-04EE29E01F17</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A45CEFD-2744-3A59-A5B8-D5CF9AADE5C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

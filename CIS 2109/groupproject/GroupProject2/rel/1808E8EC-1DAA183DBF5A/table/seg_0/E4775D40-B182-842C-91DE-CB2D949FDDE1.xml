@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4775D40-B182-842C-91DE-CB2D949FDDE1" name="Vendors">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>0EEC25F0-80BF-370C-1422-2D291650B2B9</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vendor_ID" id="5A73ACFE-8B7E-6E9D-A198-BBE53D4FBC4D">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>EE9ACD14-B03A-1B4A-5462-8E87310C9E53</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vendor_Name" id="DD3CB24A-2C09-C594-FD78-25DCA652D3A1">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>76754C8D-B362-7E07-ECD1-885039BF1857</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone_Number" id="1FBB151D-DA1E-5ED1-163F-744F82E60069">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>82F1F279-51F7-0580-7C11-650C332337DD</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="37258188-836C-3802-0F90-C44A6F2F4777">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>695B9B58-6A94-C23E-4B33-AEDA4A74604F</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48626A02-67C3-D747-8AF9-08BFBD2DFA6A" name="Vendors_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>43B6A856-DED3-8D50-1527-F52FB2CF7C1F</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A73ACFE-8B7E-6E9D-A198-BBE53D4FBC4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

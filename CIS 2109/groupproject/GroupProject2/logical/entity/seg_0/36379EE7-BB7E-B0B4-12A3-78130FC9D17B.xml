@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36379EE7-BB7E-B0B4-12A3-78130FC9D17B" name="Vehicles">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:42:53 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Vehicle ID" id="8DD42E46-7705-D649-C2B4-B9E21FB83EEA">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:43:03 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Make" id="7BBF792D-5ECF-90B5-5435-18870FAFCE8D">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:43:18 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Model" id="52299D13-C142-3277-BB0B-707B67EA1117">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:43:24 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Year" id="4C0473CE-858E-020F-259B-109CF380C7DD">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:43:32 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Engine Type" id="DC15DE96-34D9-8009-9D81-6B76131DD5E6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:44:02 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE82CC4F-694C-C7F7-E6BC-FBA8874748EF" name="Vehicles PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:43:16 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DD42E46-7705-D649-C2B4-B9E21FB83EEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

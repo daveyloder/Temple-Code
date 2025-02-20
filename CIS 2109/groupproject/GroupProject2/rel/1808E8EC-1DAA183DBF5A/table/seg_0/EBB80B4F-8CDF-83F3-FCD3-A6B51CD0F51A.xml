@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBB80B4F-8CDF-83F3-FCD3-A6B51CD0F51A" name="Vendor_Transactions">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>A959924B-CFA7-C310-9FF7-95FEBC831312</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Supply_Orders_Order_ID" id="A4A8F212-E60A-091E-0E8B-CC9B1FC3174A">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>C1F0A0AC-2DA9-EDB6-F4DA-8457777D4D3B</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A903B4FF-513E-5041-7C86-2AF273B80F88" referredColumn="C4A028CB-30FC-2C45-7056-79841221AA9D"/>
+</associations>
+</Column>
+<Column name="Vendors_Vendor_ID" id="04FC2115-B699-9A80-F467-846AEC70D00B">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>6063B78D-5439-A319-F342-25C13BC4E84F</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC70C5CA-7935-6C77-39B4-924C9CCA6DC7" referredColumn="5A73ACFE-8B7E-6E9D-A198-BBE53D4FBC4D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59050760-7722-4D88-A6C4-70D2BC9BE5E9" name="Vendor_Transactions_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>37425991-F810-88DE-E0EE-DDE6D1E4CE39</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04FC2115-B699-9A80-F467-846AEC70D00B"/>
+<colUsage columnID="A4A8F212-E60A-091E-0E8B-CC9B1FC3174A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6B1927A-6BE1-8BC8-925A-8589E05C6935" name="Vendor_Transactions_Supply_Orders_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>A1B4AA17-C8F1-8226-77C8-4143DEC1EDBA</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4A8F212-E60A-091E-0E8B-CC9B1FC3174A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3A7B1BF-FC28-ABA6-C995-E4D4C459F823" name="Vendor_Transactions_Vendors_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>6F9A824A-84D2-F636-64E0-F7C8AB609AF7</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04FC2115-B699-9A80-F467-846AEC70D00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

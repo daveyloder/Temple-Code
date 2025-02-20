@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B9F56CAF-AC4F-BE95-0769-62EFF6EF6C1E" containerWithKeyObject="7EBA817E-A44E-4B07-A740-FBCCD17C835D" localFKIndex="6F970141-365A-DD73-1153-FAFDB137D9EC" name="Electric_Vehicles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>170C9DE9-5235-696F-5144-51C31BD605A6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<referredTableLongName>Vehicles</referredTableLongName>
+<arc>CCAF15AD-279C-192E-452C-AFA7D737045D</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3EB390A1-059A-ACB5-53AD-39074B9CB61D</referredTableID>
+<keyObject>E0083265-7A46-BECB-2FE1-0D4BB2B9ABB1</keyObject>
+<referredKeyID>E0083265-7A46-BECB-2FE1-0D4BB2B9ABB1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Vehicle_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9EBD8998-19C2-2AA5-7866-BE900069123C" name="Peer-Reviewed Papers">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 19:43:19 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>9645E75D-1F99-984F-50A5-0BC664B68924</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Citation Count" id="8FC16BEB-BB09-A03B-E989-77F0CED84697">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 19:44:35 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<engineerTo>
+<item key="FB0ED440-FC22-544F-308A-80106F7570C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

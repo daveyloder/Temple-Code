@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1ABA755-E662-7E69-5159-E29D42D96073" name="Vehicles_To_Parts">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>6838A604-3348-8150-7F60-32D89C02540C</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Chassis_No" id="9B72F17E-4C73-38FD-04B1-E7D201105EC4">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>EE52AA3A-096D-35F8-0B12-9F9D47F88BC3</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vehicles_Vehicle_ID" id="E1311FB2-3C08-CA21-8C38-A34623171F0F">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>987B4597-D65E-17B7-ACF2-A4A1A07E118E</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7801930C-957E-895D-0B08-0B1E430BED36" referredColumn="A90A7DEA-0F93-F4B2-8B94-F7CFF97D9F64"/>
+</associations>
+</Column>
+<Column name="Parts_Part_ID" id="E38E9E53-E883-E854-754B-41820149B6CB">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>8C229910-4B0F-AB73-31FD-10FF2B7600C7</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="344351EF-60CE-AF71-3CA7-6410BC0409B4" referredColumn="CBC05D3E-5FC5-2933-2583-46C09C59F78E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9D59CF4-5906-A305-833B-26A06E2EE3CB" name="Vehicles_To_Parts_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>5DB69A63-3D09-2521-0BF1-9A057597BCBC</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1311FB2-3C08-CA21-8C38-A34623171F0F"/>
+<colUsage columnID="E38E9E53-E883-E854-754B-41820149B6CB"/>
+<colUsage columnID="9B72F17E-4C73-38FD-04B1-E7D201105EC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8C17B1B-F211-AA90-CC98-FD951093CB19" name="Vehicles_To_Parts_Vehicles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>1A0A803E-3BA3-6138-2577-F0D2831D4AEA</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1311FB2-3C08-CA21-8C38-A34623171F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74C86088-5DD5-93FB-60FB-BE0C97167B40" name="Vehicles_To_Parts_Parts_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>40C0088C-5C7E-8FBB-65AD-CC29330455BE</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E38E9E53-E883-E854-754B-41820149B6CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

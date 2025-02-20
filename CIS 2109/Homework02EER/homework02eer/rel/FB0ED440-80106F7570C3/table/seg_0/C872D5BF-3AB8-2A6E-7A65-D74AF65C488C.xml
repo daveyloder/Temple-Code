@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C872D5BF-3AB8-2A6E-7A65-D74AF65C488C" name="Journals">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>166EE46B-2152-B8EA-7983-F122A69CED3E</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Peer-Reviewed_Papers_DOI" id="F70B970C-2FAE-B0AD-B122-F077C6A801E7">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>A6B28ED9-17B7-363F-DC9C-E32EED7C8D6C</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1195BAA3-D431-96AB-EED9-045E053330C8" referredColumn="7B00A598-87E7-5BF7-BB8D-4972DC821AFF"/>
+</associations>
+</Column>
+<Column name="Name" id="D4AE06B2-0A30-9629-839F-EFED3E9BB0B3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>9C5185CC-B343-D71F-C1CA-D48D2291A802</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Scientific_Impact" id="C44BB5C3-EDD0-3AAF-0654-8114A48DD490">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>B74A660F-13B6-D779-8B0E-6D87CBED53FF</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Publisher_Publisher_Name" id="0A6F1180-FE5E-842B-CF26-2853D6168473">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>0736D102-B61A-B27B-B4FB-C4EEBA9045D5</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51EED7FD-504C-51B0-D788-863A625B25F8" referredColumn="509F1266-7321-A598-2639-3908773614BE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D466D90D-22B8-F339-FF49-B30BDFA5BFEB" name="Journals_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>2332DD25-5301-211A-31EC-29086ABF7C7B</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F70B970C-2FAE-B0AD-B122-F077C6A801E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DDB948C-691C-B2BF-F781-64E2B8979F03" name="Journals_Peer-Reviewed_Papers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>08CC00B8-34B1-E998-C074-2DE0EB3B3610</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F70B970C-2FAE-B0AD-B122-F077C6A801E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EE48513-C51F-5240-6B86-02EC7657F684" name="Journals_Publisher_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>80FA9EFF-F195-67EB-54A0-ED209051CF9C</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A6F1180-FE5E-842B-CF26-2853D6168473"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

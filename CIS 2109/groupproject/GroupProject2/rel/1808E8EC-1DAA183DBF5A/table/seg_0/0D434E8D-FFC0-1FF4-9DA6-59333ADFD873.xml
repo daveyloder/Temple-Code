@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D434E8D-FFC0-1FF4-9DA6-59333ADFD873" name="Orders">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>64828339-79DE-E0E8-E402-81342ABAD54B</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Order_ID" id="E11FF210-7136-3404-B47C-F9C55AE31277">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>7B4B7C53-CF76-E28B-442A-9B221329F460</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Order_Total" id="F4181DA6-950D-84B0-77CC-CB900B9D9683">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>D40C4FF3-8E2F-652A-8ABB-6A47B72D2085</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Order_Date" id="BEEAAF53-2E57-EC36-5CDB-CD9D81445B76">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date when the order is placed]]></commentInRDBMS>
+<generatorID>573A8C1F-A329-C4A3-F3FF-CA614B188D14</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Payment_Date" id="3EC41B74-28AC-3047-4D05-C1AC84A073E5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>9FBED491-97F3-1F36-D900-AD25C8FBCDA3</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Customers_Cust_ID" id="BE0CCF42-ADE3-E110-7A1C-12E7F0C13272">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>E8280DDE-FCA4-5747-F09B-B7A35130DA82</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9334A603-3E88-7434-15C9-039BF93EE37C" referredColumn="B5BCAA7E-C8BE-2BC4-0D78-7137602EF59A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A419107B-13BE-4E6D-5C5A-B06458259D3A" name="Orders_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>69B17AC7-78EC-1CC6-FDB2-D3940C8AF824</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E11FF210-7136-3404-B47C-F9C55AE31277"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7D98358-CBA3-59B9-E514-726BCB3F47F8" name="Orders_Customers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>F3E0CD41-6B6C-C3C8-B24B-8C3A5B95DDB3</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE0CCF42-ADE3-E110-7A1C-12E7F0C13272"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

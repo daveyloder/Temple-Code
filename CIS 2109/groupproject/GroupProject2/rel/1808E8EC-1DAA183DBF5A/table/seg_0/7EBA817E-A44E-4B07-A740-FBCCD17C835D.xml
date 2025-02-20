@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7EBA817E-A44E-4B07-A740-FBCCD17C835D" name="Electric">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>4053DBCB-ABB8-349E-3A0D-E34F196D7247</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vehicle_ID" id="66DFB7FC-87FB-87EC-3072-C49B1AB14DB8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>8DD42E46-7705-D649-C2B4-B9E21FB83EEA</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9F56CAF-AC4F-BE95-0769-62EFF6EF6C1E" referredColumn="EA7ABF8E-463B-9ABC-CDDD-CB3FEEFD53E4"/>
+</associations>
+</Column>
+<Column name="MPwM" id="783A8360-5616-62FE-2944-77FBA9086276">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Miles per Watt]]></commentInRDBMS>
+<generatorID>D3BEC8E2-7E0E-A7CE-D864-50BEF3AF76BC</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22F9FB70-8121-ACFB-B3DB-DCDA724AA779" name="Electric_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>FE82CC4F-694C-C7F7-E6BC-FBA8874748EF</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66DFB7FC-87FB-87EC-3072-C49B1AB14DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F970141-365A-DD73-1153-FAFDB137D9EC" name="Electric_Vehicles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>170C9DE9-5235-696F-5144-51C31BD605A6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66DFB7FC-87FB-87EC-3072-C49B1AB14DB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

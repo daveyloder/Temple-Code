@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6214151-192B-7461-F04E-AF19C4AA7234" name="Customer_Warranties">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>E31DFA04-0E3F-5980-DBAD-3BD471C703FF</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Orders_Order_ID" id="714F0E41-9C35-AB44-8EA2-462362C3495D">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>AA8CA050-9053-FF46-9596-054437C8BE52</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2AD7DE6-EA1E-2890-FA4B-D4C8E5BA0774" referredColumn="E11FF210-7136-3404-B47C-F9C55AE31277"/>
+</associations>
+</Column>
+<Column name="Parts_Part_ID" id="B3F910E6-A6C7-5F75-FF44-B5D7594A524B">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>5BB27E8B-CF61-3A2B-B444-F24D31E98551</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D14FE679-B399-66F2-50F8-8841D8CE1A7F" referredColumn="010666AA-7AB6-F202-80C7-43E601B171E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2C06CAB-29C5-DEFA-867A-19E9D25DA178" name="Customer_Warranties_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>D6954A67-8B82-CEA5-FFAA-2A4737FD1CC9</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="714F0E41-9C35-AB44-8EA2-462362C3495D"/>
+<colUsage columnID="B3F910E6-A6C7-5F75-FF44-B5D7594A524B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62394ED9-BC6E-01D2-AB05-B1A96E8D757B" name="Customer_Warranties_Orders_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>A9D4CF99-2BE7-38F3-821F-A337C244A908</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="714F0E41-9C35-AB44-8EA2-462362C3495D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B57BA780-D389-5E85-5B07-BF8B7A8E4397" name="Customer_Warranties_Parts_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>9AC57E11-E64E-C7D4-ACD7-7E283AE464D4</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3F910E6-A6C7-5F75-FF44-B5D7594A524B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

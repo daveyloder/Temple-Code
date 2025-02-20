@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1200D59-4F7D-6E95-9D36-44A221BF4262" name="Authors">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>3B70EAA3-448E-F158-DFD0-C345B162133A</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_ID" id="2C627B45-EE1C-DD4A-08C9-750EB7E4BC18">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>DEB0368A-DA23-C5C3-333D-746D2A7BCECD</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79FD6FAF-086C-DECD-0789-112953A2E9B5" referredColumn="13D359BD-3299-951C-8364-97A0A3122558"/>
+</associations>
+</Column>
+<Column name="Articles_DOI" id="43680913-A9CC-7626-1E8B-55447D61EAF3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>197AFC00-4966-0590-A289-5E511B5F8C18</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="755D46A0-6E8D-6608-BD81-55896DDDC942" referredColumn="F2BF43A6-B59E-B46C-ED8D-EADFE8E81E6A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD90FAE4-7A89-853F-09E8-720E9B109E0C" name="Authors_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>037FAE5D-1306-6F1B-F8BD-E1B8F50D2AA5</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C627B45-EE1C-DD4A-08C9-750EB7E4BC18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63A39A19-4207-6008-D81A-28B659D6C92D" name="Authors_Researchers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>B3D3AEFA-6D53-1AE2-11D0-42E538160124</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C627B45-EE1C-DD4A-08C9-750EB7E4BC18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B4943EF-E4A0-342C-AEBB-2191C7A9E4E9" name="Authors_Articles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>2AE5C64F-A2B1-7A30-87EB-918C64C390AA</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43680913-A9CC-7626-1E8B-55447D61EAF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

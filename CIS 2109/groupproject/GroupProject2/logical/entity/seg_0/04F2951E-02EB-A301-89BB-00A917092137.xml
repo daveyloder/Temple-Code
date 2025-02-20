@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="04F2951E-02EB-A301-89BB-00A917092137" name="Logistics">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:25:33 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Tracking No" id="3AB2CE33-49F3-A68A-0548-A20CF5F9D069">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:28:43 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order ID" id="1FB16018-0EBB-B024-88ED-12CC50D63EDD">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:29:15 UTC</createdTime>
+<generatorID>59EEFE41-5F1B-306A-F163-1109B00A26E8</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7B4B7C53-CF76-E28B-442A-9B221329F460</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cust ID" id="BC42DAB7-CAC3-A71B-538C-5BDB3372444C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:28:17 UTC</createdTime>
+<generatorID>432C5705-C8AA-300B-1F7C-608754F94957</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7463996D-66FB-2C2A-C535-6CF61E90D4AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Carrier" id="36DD3E37-44BD-D6DD-6B52-336108B67137">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:26:34 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Shipping Rate" id="C5515B6F-50ED-FF47-832D-BD950FB31343">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:26:40 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WH ID" id="5F4BF2B1-574C-53C4-1BD4-3D15B4A51909">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:20:36 UTC</createdTime>
+<generatorID>C8BBB53A-760D-6AAD-17A4-150B91E56AE0</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>E8234E17-166F-F937-B302-67320B3F3D73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="389B63B9-2115-DC60-61BC-89B48B2B38DC" name="Logistics PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-03 22:28:32 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC42DAB7-CAC3-A71B-538C-5BDB3372444C</attributeRef>
+<attributeRef>1FB16018-0EBB-B024-88ED-12CC50D63EDD</attributeRef>
+<attributeRef>3AB2CE33-49F3-A68A-0548-A20CF5F9D069</attributeRef>
+<attributeRef>5F4BF2B1-574C-53C4-1BD4-3D15B4A51909</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

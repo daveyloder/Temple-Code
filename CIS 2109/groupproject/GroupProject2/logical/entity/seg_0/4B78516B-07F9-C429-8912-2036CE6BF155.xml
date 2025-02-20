@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B78516B-07F9-C429-8912-2036CE6BF155" name="Supply Order Lines">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:27:38 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Line No" id="292A9469-7920-F3C6-7794-0F4190EB8965">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:28:15 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Qty" id="CC024122-F0EF-0A8F-819B-478B63953229">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:28:27 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Wholesale Price" id="00450D26-7B99-84FB-E043-187442A0EA43">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:28:37 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order ID" id="552E3B7D-5BF0-04BC-770B-F8410755C8E5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:29:09 UTC</createdTime>
+<generatorID>9F89EAE4-09BC-D08A-BD47-5221BE3553E7</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>221A7BE5-5B73-8EB2-E1F7-FE4D0DABEF1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Part ID" id="335FC4E0-193B-7A2A-D335-0653695CBD66">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:29:30 UTC</createdTime>
+<generatorID>000B5EAB-8661-186D-20EB-A471D60FB6FD</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>E17D2AF9-FB38-690C-F3ED-3A6F0E3BF76C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6850792-6117-E192-65A6-C9D064D189A5" name="Supply Order Lines PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:28:26 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>292A9469-7920-F3C6-7794-0F4190EB8965</attributeRef>
+<attributeRef>552E3B7D-5BF0-04BC-770B-F8410755C8E5</attributeRef>
+<attributeRef>335FC4E0-193B-7A2A-D335-0653695CBD66</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

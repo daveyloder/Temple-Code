@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00027387-79FF-9E46-D959-272416FADA0D" name="Technical_Reports">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>C4A0DD0D-F36E-81DE-D9E1-4136FF910CCB</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOI" id="26138D93-FB81-0D75-7373-22E2A1A97CF9">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8D560AEA-187E-22D4-BB18-EABD4A56A10B</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9EA41C8-0946-F137-CDA3-F886E73BB3F1" referredColumn="F2BF43A6-B59E-B46C-ED8D-EADFE8E81E6A"/>
+</associations>
+</Column>
+<Column name="Research_Institutions_Institution_Code" id="1AE8F7FC-1E80-CD8C-9C4D-5ABCEE820E59">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>F37128D6-496D-4C05-F721-AD2C07772890</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D75040E-D0A9-866B-1221-1BF51EE37BCD" referredColumn="98EEEF8F-D024-F07C-7961-378A5CEE9ECD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7DD519B8-A266-1F6E-9B6A-9F1350E7DACD" name="Technical_Reports_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8260B5C5-3061-A293-AD99-0B6F74911573</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26138D93-FB81-0D75-7373-22E2A1A97CF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DF7C8B0-78DF-C4F9-C728-6D46B1D13FCE" name="Technical_Reports_Articles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>2B01541F-C782-4D46-5FBE-2380D5AF7F43</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26138D93-FB81-0D75-7373-22E2A1A97CF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0045C3D-2292-817A-01B5-83FB6FA22374" name="Technical_Reports_Research_Institutions_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>65BCB948-C58E-28FD-42EC-C1261C0AC7C4</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AE8F7FC-1E80-CD8C-9C4D-5ABCEE820E59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

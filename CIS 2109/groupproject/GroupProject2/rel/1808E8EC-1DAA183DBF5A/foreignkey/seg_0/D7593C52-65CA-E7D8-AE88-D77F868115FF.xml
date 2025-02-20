@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D7593C52-65CA-E7D8-AE88-D77F868115FF" containerWithKeyObject="45569388-CC64-0D06-C19D-1AD0E3E9DD40" localFKIndex="C9FA6E63-9F30-54C6-3FB6-A1C3BA3FF6AB" name="Part_Quantities_Warehouses_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>079493DC-6956-2F0A-963E-04B14CE22DAE</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<referredTableLongName>Warehouses</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5334EBFB-1D0B-A4FB-088D-0F6F9EDFC004</referredTableID>
+<keyObject>64924D67-5CAD-E64A-705E-3D063AF02CEC</keyObject>
+<referredKeyID>64924D67-5CAD-E64A-705E-3D063AF02CEC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

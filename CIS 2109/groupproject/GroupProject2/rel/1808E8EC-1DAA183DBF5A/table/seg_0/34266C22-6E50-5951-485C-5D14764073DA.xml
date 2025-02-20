@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34266C22-6E50-5951-485C-5D14764073DA" name="Combustion_Engine">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>5D84A984-7308-6AAB-1E97-CC5A83555E91</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vehicle_ID" id="712B6FB0-EF4E-06B8-AC8E-0BB1566D35E8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>8DD42E46-7705-D649-C2B4-B9E21FB83EEA</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="861C1315-0591-0330-9691-D9D88A183799" referredColumn="A90A7DEA-0F93-F4B2-8B94-F7CFF97D9F64"/>
+</associations>
+</Column>
+<Column name="MPG" id="84FAF872-5B1F-37FF-43D1-F87FE5561F9C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>A147AD7C-39D8-A4CF-886E-ABC055961707</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16D2EB63-27B1-D4B7-EE80-AD387AEE29BA" name="Combustion_Engine_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>FE82CC4F-694C-C7F7-E6BC-FBA8874748EF</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="712B6FB0-EF4E-06B8-AC8E-0BB1566D35E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10E2899D-41C3-D555-CB4D-D3C64B9877A0" name="Combustion_Engine_Vehicles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-18 21:49:03 UTC</createdTime>
+<generatorID>43D10244-AF9C-CEC9-6A9B-16D9BAA02570</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="712B6FB0-EF4E-06B8-AC8E-0BB1566D35E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

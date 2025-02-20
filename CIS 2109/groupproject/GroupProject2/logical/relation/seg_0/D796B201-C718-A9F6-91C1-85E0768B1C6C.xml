@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Paid Order Transactions" directorySegmentName="seg_0" id="D796B201-C718-A9F6-91C1-85E0768B1C6C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:23:13 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<sourcePk>69B17AC7-78EC-1CC6-FDB2-D3940C8AF824</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>85E606F6-255B-37F9-D32D-2E264171BC53</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B95B0BD5-67FF-7366-793E-F0715F1FCC7D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

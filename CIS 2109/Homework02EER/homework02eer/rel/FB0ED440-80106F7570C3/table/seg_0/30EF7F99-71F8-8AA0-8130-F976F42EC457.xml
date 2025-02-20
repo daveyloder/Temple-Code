@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30EF7F99-71F8-8AA0-8130-F976F42EC457" name="Articles">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>9645E75D-1F99-984F-50A5-0BC664B68924</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOI" id="F2BF43A6-B59E-B46C-ED8D-EADFE8E81E6A">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8D560AEA-187E-22D4-BB18-EABD4A56A10B</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Title" id="836484FB-6E27-3E8D-D1A5-2F35BDBBCFB8">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>DB02C1C6-DAA6-F0D9-C825-2EF81C0C755D</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Article_Type" id="87109D56-90E5-9B20-1347-795C478114ED">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>16909675-A2E6-8B97-C5AF-E42FA4F02BB4</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<constraintName>CH_INH_Articles</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="Articles" description="entity Articles"/>
+<valueDef value="Peer-Reviewed_Papers" description="entity Peer-Reviewed Papers"/>
+<valueDef value="Technical_Reports" description="entity Technical Reports"/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48993E93-B3C2-CC60-0902-8457E7B0FE00" name="Articles_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8260B5C5-3061-A293-AD99-0B6F74911573</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2BF43A6-B59E-B46C-ED8D-EADFE8E81E6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

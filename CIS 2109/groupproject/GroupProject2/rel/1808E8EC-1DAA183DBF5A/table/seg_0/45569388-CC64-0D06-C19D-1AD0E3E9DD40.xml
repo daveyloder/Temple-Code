@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45569388-CC64-0D06-C19D-1AD0E3E9DD40" name="Part_Quantities">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>09F9D98B-38E4-81A0-E44B-DF739A37166E</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Qty" id="65F3D548-3F99-FF96-84FC-5DCF52F3422F">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>62E1104B-29C3-19A2-DA00-FC6072ABB935</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Parts_Part_ID" id="DF0D018F-3CBE-CC27-964C-B8D850E0958A">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>DFBB170D-C82A-BB1D-AB65-5A8C83D30043</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD53D35D-6230-D289-A6FD-8C53479922B6" referredColumn="010666AA-7AB6-F202-80C7-43E601B171E8"/>
+</associations>
+</Column>
+<Column name="Warehouses_WH_ID" id="AFC831E5-3296-A855-71E6-D64EBB2F3509">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>B34609D0-69BA-B48D-9706-DF80FE937C73</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7593C52-65CA-E7D8-AE88-D77F868115FF" referredColumn="999284CC-64AA-793E-B2E8-6F38B23593BD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="358426CB-2541-A214-5EBF-5F05E60104F6" name="Part_Quantities_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>C3864E61-9FE6-166C-9DFE-777C6C023248</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF0D018F-3CBE-CC27-964C-B8D850E0958A"/>
+<colUsage columnID="AFC831E5-3296-A855-71E6-D64EBB2F3509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41FC716A-4CF6-0051-C666-558AEAA49E66" name="Part_Quantities_Parts_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>165E53B3-2274-212A-CFEA-8DDF2376961C</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF0D018F-3CBE-CC27-964C-B8D850E0958A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9FA6E63-9F30-54C6-3FB6-A1C3BA3FF6AB" name="Part_Quantities_Warehouses_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>079493DC-6956-2F0A-963E-04B14CE22DAE</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFC831E5-3296-A855-71E6-D64EBB2F3509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

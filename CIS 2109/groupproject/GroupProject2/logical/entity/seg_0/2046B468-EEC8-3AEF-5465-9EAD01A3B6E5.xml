@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2046B468-EEC8-3AEF-5465-9EAD01A3B6E5" name="Order Lines">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:51:59 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Line No" id="3C2292E2-E5FB-AB43-0EC0-0643F04AF366">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:52:09 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order ID" id="C497002F-8B64-3215-EB42-845EB13CCF58">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:52:30 UTC</createdTime>
+<generatorID>D1044E01-B08C-6DB5-AF0A-44AF304961FE</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7B4B7C53-CF76-E28B-442A-9B221329F460</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Part ID" id="57EE552E-326C-415C-DAB0-102EB0E995E2">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:52:59 UTC</createdTime>
+<generatorID>2E048C67-E1D8-15FF-095C-A8BE3EEF6D84</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>E17D2AF9-FB38-690C-F3ED-3A6F0E3BF76C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Quantity" id="E248348B-28E1-1D33-F0A0-4056A257E276">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:55:00 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Line Total" id="33007691-726F-DEBD-A02A-98080D0D75F6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:55:40 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E1F66F23-BC21-CE27-2E48-C013A3EA246E" name="Order Line PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 22:52:30 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C497002F-8B64-3215-EB42-845EB13CCF58</attributeRef>
+<attributeRef>57EE552E-326C-415C-DAB0-102EB0E995E2</attributeRef>
+<attributeRef>3C2292E2-E5FB-AB43-0EC0-0643F04AF366</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

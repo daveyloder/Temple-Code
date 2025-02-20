@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="719A4856-4D76-E69A-4966-76948CE32F56" name="Supply_Order_Lines">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>4B78516B-07F9-C429-8912-2036CE6BF155</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Line_No" id="5934C922-F7D9-3A61-5E4A-3B73A00D197E">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>292A9469-7920-F3C6-7794-0F4190EB8965</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Qty" id="C3249740-FA65-2B38-EDAE-5C12432D26F5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>CC024122-F0EF-0A8F-819B-478B63953229</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wholesale_Price" id="D3E70846-2779-C148-EE15-87EFA65A9641">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>00450D26-7B99-84FB-E043-187442A0EA43</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Supply_Orders_Order_ID" id="24BFFFD2-0C71-F39B-6706-9BECFA9A0513">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>552E3B7D-5BF0-04BC-770B-F8410755C8E5</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09C9C800-D377-D6C4-9553-8E5E21E3049E" referredColumn="88AF9E32-49BD-A5AC-D5E8-3821E64C545A"/>
+</associations>
+</Column>
+<Column name="Parts_Part_ID" id="6A8B0A2D-7D53-3D88-F6A0-FA0F3E03DA85">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>335FC4E0-193B-7A2A-D335-0653695CBD66</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DD34949-4CF8-09B6-3323-4A86A0EC781A" referredColumn="010666AA-7AB6-F202-80C7-43E601B171E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83F46539-F46F-19E6-C143-EF993B53C023" name="Supply_Order_Lines_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>F6850792-6117-E192-65A6-C9D064D189A5</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5934C922-F7D9-3A61-5E4A-3B73A00D197E"/>
+<colUsage columnID="24BFFFD2-0C71-F39B-6706-9BECFA9A0513"/>
+<colUsage columnID="6A8B0A2D-7D53-3D88-F6A0-FA0F3E03DA85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="936D2BA0-860F-AC8E-B34A-FB75E72E3DC0" name="Supply_Order_Lines_Supply_Orders_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>9F89EAE4-09BC-D08A-BD47-5221BE3553E7</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24BFFFD2-0C71-F39B-6706-9BECFA9A0513"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75B472EC-B807-C5EC-BDEF-94F4C0367A00" name="Supply_Order_Lines_Parts_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>000B5EAB-8661-186D-20EB-A471D60FB6FD</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A8B0A2D-7D53-3D88-F6A0-FA0F3E03DA85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

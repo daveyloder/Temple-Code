@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE20CB2E-36FF-49FF-E5D1-761AA93D5087" name="Suscriptions">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<ordsAlias>relation_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Research_Institutions_Institution_Code" id="C0637E7F-9C48-7D62-D961-DA5E78116CAB">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD8FDD2B-2B79-DC84-12AB-33992C5D0AA0" referredColumn="98EEEF8F-D024-F07C-7961-378A5CEE9ECD"/>
+</associations>
+</Column>
+<Column name="Journals_Peer-Reviewed_Papers_DOI" id="A49AED4C-1CA4-10EA-8846-BC1D58C4A8F5">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A39571E-20A5-4AB4-964E-DD2FCD5D75EF" referredColumn="F70B970C-2FAE-B0AD-B122-F077C6A801E7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B226928A-A8E5-8B07-2078-811D85188236" name="Relation_17_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0637E7F-9C48-7D62-D961-DA5E78116CAB"/>
+<colUsage columnID="A49AED4C-1CA4-10EA-8846-BC1D58C4A8F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BA2BC30-BA6E-9CA8-55BB-D6B745D30768" name="Relation_17_Research_Institutions_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>BFB40993-D519-5BC1-0082-BE44590F52D9</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0637E7F-9C48-7D62-D961-DA5E78116CAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A1A043C-867E-2E44-6498-C7BCD15BC764" name="Relation_17_Journals_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>BFB40993-D519-5BC1-0082-BE44590F52D9</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A49AED4C-1CA4-10EA-8846-BC1D58C4A8F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

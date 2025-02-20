@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9194A3C8-AEBE-4809-9F27-64C5A52B245F" name="Reviewers">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>562F00A2-E2F4-85CD-49B9-EFB2823DCE3C</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_ID" id="B154D35E-6B32-024F-5A2D-32D1B99D2502">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>DEB0368A-DA23-C5C3-333D-746D2A7BCECD</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06B38832-7395-80F5-DCAA-ABC27F23446D" referredColumn="13D359BD-3299-951C-8364-97A0A3122558"/>
+</associations>
+</Column>
+<Column name="Recommendation" id="579C2B7C-CD06-EDDB-2D5C-69BDF6F0B1F3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>A519CCE3-E5B2-49ED-291F-5149927B4643</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Peer-Reviewed_Papers_DOI" id="1AED1566-BBCC-5CAA-08F6-37324B8D8A4F">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>B8890F77-06CC-F9C4-1512-4633D3399B7A</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB4893F2-70A0-5CD8-5EEB-A7264FDB897F" referredColumn="7B00A598-87E7-5BF7-BB8D-4972DC821AFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8FD5056-3EA9-9040-BDA8-4DC345DFE70D" name="Reviewers_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>037FAE5D-1306-6F1B-F8BD-E1B8F50D2AA5</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B154D35E-6B32-024F-5A2D-32D1B99D2502"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B49459F7-D053-8244-8E84-3C0A4AB58BE6" name="Reviewers_Researchers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>502AE8B6-0969-7E87-AF9F-9AE04B0F1821</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B154D35E-6B32-024F-5A2D-32D1B99D2502"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7779A6BB-B953-470E-5EE0-6E0F81037862" name="Reviewers_Peer-Reviewed_Papers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>EA924181-B0CE-00E4-59B0-D77295824AFC</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AED1566-BBCC-5CAA-08F6-37324B8D8A4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

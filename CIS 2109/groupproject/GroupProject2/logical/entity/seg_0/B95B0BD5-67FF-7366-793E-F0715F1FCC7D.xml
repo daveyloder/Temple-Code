@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B95B0BD5-67FF-7366-793E-F0715F1FCC7D" name="Transactions">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:21:29 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Transaction ID" id="DCB68828-08A6-4DF3-17F4-530C22CB7307">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:21:40 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order ID" id="5DB6F810-8353-029C-05F0-F8277841B54B">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:23:13 UTC</createdTime>
+<generatorID>D796B201-C718-A9F6-91C1-85E0768B1C6C</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7B4B7C53-CF76-E28B-442A-9B221329F460</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Transaction Amount" id="4AE031E7-183B-3009-414B-11EA1C5B8343">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:24:02 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Payment Method" id="0BF54E17-3DD5-5928-0D7A-D63BCD0DB260">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:27:38 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C11D1FB-A339-4F6F-D839-FE1933BAF1CD" name="Transactions PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-09 14:21:50 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DCB68828-08A6-4DF3-17F4-530C22CB7307</attributeRef>
+<attributeRef>5DB6F810-8353-029C-05F0-F8277841B54B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

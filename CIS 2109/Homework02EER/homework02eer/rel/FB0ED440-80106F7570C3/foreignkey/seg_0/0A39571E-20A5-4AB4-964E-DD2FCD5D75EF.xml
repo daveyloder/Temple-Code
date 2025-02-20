@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0A39571E-20A5-4AB4-964E-DD2FCD5D75EF" containerWithKeyObject="DE20CB2E-36FF-49FF-E5D1-761AA93D5087" localFKIndex="7A1A043C-867E-2E44-6498-C7BCD15BC764" name="Relation_17_Journals_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>BFB40993-D519-5BC1-0082-BE44590F52D9</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<referredTableLongName>Journals</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C872D5BF-3AB8-2A6E-7A65-D74AF65C488C</referredTableID>
+<keyObject>D466D90D-22B8-F339-FF49-B30BDFA5BFEB</keyObject>
+<referredKeyID>D466D90D-22B8-F339-FF49-B30BDFA5BFEB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Peer-Reviewed_Papers_DOI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

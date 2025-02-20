@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FFAE4D7-8786-E4CE-0772-5EF2FD50AECB" name="Peer-Reviewed_Papers">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>9EBD8998-19C2-2AA5-7866-BE900069123C</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOI" id="7B00A598-87E7-5BF7-BB8D-4972DC821AFF">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8D560AEA-187E-22D4-BB18-EABD4A56A10B</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6277623-9C03-E8B6-EE34-686BB69EEF4C" referredColumn="F2BF43A6-B59E-B46C-ED8D-EADFE8E81E6A"/>
+</associations>
+</Column>
+<Column name="Citation_Count" id="2D6093B5-B45F-A72C-DCCE-70B4E706AD56">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8FC16BEB-BB09-A03B-E989-77F0CED84697</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CA25C31-ED75-B003-4819-41A9C429AA42" name="Peer-Reviewed_Papers_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>8260B5C5-3061-A293-AD99-0B6F74911573</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B00A598-87E7-5BF7-BB8D-4972DC821AFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A952934-F00B-4E75-5BE4-5A52B3843056" name="Peer-Reviewed_Papers_Articles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>7C13BC48-383F-DA28-2FD6-3453E62B6093</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B00A598-87E7-5BF7-BB8D-4972DC821AFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9EA41C8-0946-F137-CDA3-F886E73BB3F1" containerWithKeyObject="00027387-79FF-9E46-D959-272416FADA0D" localFKIndex="1DF7C8B0-78DF-C4F9-C728-6D46B1D13FCE" name="Technical_Reports_Articles_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-03-31 20:13:44 UTC</createdTime>
+<generatorID>2B01541F-C782-4D46-5FBE-2380D5AF7F43</generatorID>
+<ownerDesignName>homework02eer</ownerDesignName>
+<referredTableLongName>Articles</referredTableLongName>
+<arc>4FB8ED89-AC3A-398B-BCAC-376D92471CA3</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>30EF7F99-71F8-8AA0-8130-F976F42EC457</referredTableID>
+<keyObject>48993E93-B3C2-CC60-0902-8457E7B0FE00</keyObject>
+<referredKeyID>48993E93-B3C2-CC60-0902-8457E7B0FE00</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DOI</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>Technical_Reports</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

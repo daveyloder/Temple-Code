@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="942C6CD5-657D-F3E2-0E3D-DEECF5ED118E" name="Logistics">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:27:52 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Tracking No" id="819E3899-DE5D-FEE0-E10C-3FEE1136EDA6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:28:00 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Carrier" id="E76AEBE7-08B1-A88A-3243-E2AC10F68836">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:28:52 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Order ID" id="21BFDA90-9C18-0E3C-B108-5F8D3752D4B4">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:29:29 UTC</createdTime>
+<generatorID>7A574F15-9FED-92E0-4ED8-802EEDFCDC59</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7B4B7C53-CF76-E28B-442A-9B221329F460</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cust ID" id="7435C74A-3724-58DA-BA8E-ECBD62DE9EE4">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:33:23 UTC</createdTime>
+<generatorID>9DCE3FD5-7271-E12E-E35E-C91B0E8C54B6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7463996D-66FB-2C2A-C535-6CF61E90D4AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WH ID" id="751C3EF2-F781-9A7C-972A-5E292281ABA6">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:35:00 UTC</createdTime>
+<generatorID>0395E157-9428-B39A-CFE6-0D5F5992DFDD</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>E8234E17-166F-F937-B302-67320B3F3D73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80B10DED-6AB8-3951-D91E-3CADB39E4E2C" name="Logistics PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:28:10 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>819E3899-DE5D-FEE0-E10C-3FEE1136EDA6</attributeRef>
+<attributeRef>21BFDA90-9C18-0E3C-B108-5F8D3752D4B4</attributeRef>
+<attributeRef>7435C74A-3724-58DA-BA8E-ECBD62DE9EE4</attributeRef>
+<attributeRef>751C3EF2-F781-9A7C-972A-5E292281ABA6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

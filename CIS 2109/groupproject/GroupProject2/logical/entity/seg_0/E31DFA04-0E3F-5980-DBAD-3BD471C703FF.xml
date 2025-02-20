@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E31DFA04-0E3F-5980-DBAD-3BD471C703FF" name="Customer Warranties">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:24:10 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Order ID" id="AA8CA050-9053-FF46-9596-054437C8BE52">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:26:35 UTC</createdTime>
+<generatorID>A9D4CF99-2BE7-38F3-821F-A337C244A908</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>7B4B7C53-CF76-E28B-442A-9B221329F460</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Part ID" id="5BB27E8B-CF61-3A2B-B444-F24D31E98551">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:26:54 UTC</createdTime>
+<generatorID>9AC57E11-E64E-C7D4-ACD7-7E283AE464D4</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<referedAttribute>E17D2AF9-FB38-690C-F3ED-3A6F0E3BF76C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6954A67-8B82-CEA5-FFAA-2A4737FD1CC9" name="Customer Warranties PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-10 20:24:30 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AA8CA050-9053-FF46-9596-054437C8BE52</attributeRef>
+<attributeRef>5BB27E8B-CF61-3A2B-B444-F24D31E98551</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7EC09756-FC78-0D43-823A-EE3B9725FE2E" name="Logistics">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>942C6CD5-657D-F3E2-0E3D-DEECF5ED118E</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tracking_No" id="BEA8654A-98EF-4296-008A-68BFBB9999C3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>819E3899-DE5D-FEE0-E10C-3FEE1136EDA6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Carrier" id="0E7A624A-A9F1-990E-83B0-EC56A0836FF3">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>E76AEBE7-08B1-A88A-3243-E2AC10F68836</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Orders_Order_ID" id="2F065E5F-B577-A54C-818B-3105871D5D78">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>21BFDA90-9C18-0E3C-B108-5F8D3752D4B4</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C2718A4-14B3-AAD0-6C59-E41D4669C447" referredColumn="E11FF210-7136-3404-B47C-F9C55AE31277"/>
+</associations>
+</Column>
+<Column name="Customers_Cust_ID" id="BBF4FEA9-943A-A325-3308-294A144879F9">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>7435C74A-3724-58DA-BA8E-ECBD62DE9EE4</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1081512-25C6-A146-23BD-6ABC3F42E510" referredColumn="B5BCAA7E-C8BE-2BC4-0D78-7137602EF59A"/>
+</associations>
+</Column>
+<Column name="Warehouses_WH_ID" id="BF075FA1-0134-4F8F-7BB5-87810672809C">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>751C3EF2-F781-9A7C-972A-5E292281ABA6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33D0AE29-6BA8-B96B-D918-C94C5E5C45A9" referredColumn="999284CC-64AA-793E-B2E8-6F38B23593BD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="180E0F53-485C-CC1A-3C4F-74175B7F85D9" name="Logistics_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>80B10DED-6AB8-3951-D91E-3CADB39E4E2C</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEA8654A-98EF-4296-008A-68BFBB9999C3"/>
+<colUsage columnID="2F065E5F-B577-A54C-818B-3105871D5D78"/>
+<colUsage columnID="BBF4FEA9-943A-A325-3308-294A144879F9"/>
+<colUsage columnID="BF075FA1-0134-4F8F-7BB5-87810672809C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F95015A5-A6D0-A82C-9673-0A5E52269799" name="Logistics_Orders_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>7A574F15-9FED-92E0-4ED8-802EEDFCDC59</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F065E5F-B577-A54C-818B-3105871D5D78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00CCFBBA-B6F5-9947-F595-41DA46F3D131" name="Logistics_Customers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>9DCE3FD5-7271-E12E-E35E-C91B0E8C54B6</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBF4FEA9-943A-A325-3308-294A144879F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B435919-2B12-8C33-B0BF-D78809077FD3" name="Logistics_Warehouses_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>0395E157-9428-B39A-CFE6-0D5F5992DFDD</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF075FA1-0134-4F8F-7BB5-87810672809C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

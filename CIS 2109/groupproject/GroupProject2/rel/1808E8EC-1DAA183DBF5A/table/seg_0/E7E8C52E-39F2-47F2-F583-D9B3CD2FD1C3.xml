@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7E8C52E-39F2-47F2-F583-D9B3CD2FD1C3" name="Transactions">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>FEF3124F-00E1-B5CA-2520-7F8FE920ED53</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Customers_Cust_ID" id="6C2297BA-AD7F-09C3-395C-25D10AC5566A">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>F0C06BFB-83E1-4070-1B47-F23320BB49D0</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96CAA990-2B36-AD88-3D04-31C8BF3BEBA0" referredColumn="B5BCAA7E-C8BE-2BC4-0D78-7137602EF59A"/>
+</associations>
+</Column>
+<Column name="Orders_Order_ID" id="1DD974A4-53E2-2BD2-56CC-9F8A5E05AB62">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>2F493723-6AC7-5CE9-EDDD-7E70AEF80EB1</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F76602F2-E463-0885-8639-3BDB35910A29" referredColumn="E11FF210-7136-3404-B47C-F9C55AE31277"/>
+</associations>
+</Column>
+<Column name="Payment_Method" id="2FE4171A-6C03-AFA9-46D0-76D97506EC54">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>4B717D35-40B4-97EA-6375-6FDC6E09DD1D</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E093B1C9-22EC-5D7E-AB12-B132BA909D23" name="Transactions_PK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>62682A62-66A5-2C32-4719-0920C97E3AAC</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C2297BA-AD7F-09C3-395C-25D10AC5566A"/>
+<colUsage columnID="1DD974A4-53E2-2BD2-56CC-9F8A5E05AB62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8834F0B6-5A0E-7AF8-45D3-9FEA9CEEE59B" name="Transactions_Customers_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>F10A3BB8-E391-53EC-C7D3-B064761FC99C</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C2297BA-AD7F-09C3-395C-25D10AC5566A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DABF02D6-A6E0-C2E9-05DF-DA21AA13CEC9" name="Transactions_Orders_FK">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-19 02:23:51 UTC</createdTime>
+<generatorID>A49AA71E-ED42-7C65-9994-B302F17BF85A</generatorID>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DD974A4-53E2-2BD2-56CC-9F8A5E05AB62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vendor Supply Orders" directorySegmentName="seg_0" id="5E3ACDDF-A978-7026-54A1-EFE0E62FC722">
+<createdBy>David Loder</createdBy>
+<createdTime>2024-04-12 19:26:00 UTC</createdTime>
+<ownerDesignName>GroupProject2</ownerDesignName>
+<engineerTo>
+<item key="1808E8EC-97F7-8F02-10FC-1DAA183DBF5A" value="true"/>
+</engineerTo>
+<sourcePk>43B6A856-DED3-8D50-1527-F52FB2CF7C1F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0EEC25F0-80BF-370C-1422-2D291650B2B9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>930206C7-53AE-1140-EE77-39D0B335B039</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
